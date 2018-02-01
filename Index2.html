@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>KSAU-HS Email Templates</title>
+
+
+
+    <style>
+          body {
+              background-color:#FFF9BF;
+          background: -moz-linear-gradient(left, #FFF9BF 0%, #E5E0AB 46%, #FFF9BF 50%, #FFF9BF 53%, #B69D5B 76%, #B49A56 87%, #FFF9BF 100%);
+          background: -webkit-linear-gradient(left, #E5E0AB 0%,#E5E0AB 46%,#FFF9BF 50%,#FFF9BF 53%,#B69D5B 76%,#B49A56 87%,#FFF9BF 100%);
+          background: linear-gradient(to right, #B49A56 0%,#E5E0AB 46%,#FFF9BF 50%,#FFF9BF 53%,#B69D5B 76%,#B49A56 87%,#FFF9BF 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B49A56', endColorstr='#FFF9BF',GradientType=1 );
+          }
+
+          .spacer5
+          {
+            height: 45px;
+          }
+          .spacer2
+          {
+            height: 15px;
+          }
+          .spacer1
+          {
+            width: 55px;
+          }
+          .spacer3
+          {
+            width: 15px;
+            height: 15px;
+          }
+          h1
+          {
+              color: #987316;
+            font-family: "Times New Roman", Times, serif;
+            /* font-size: 300%; */
+            /* width: 45%; */
+            letter-spacing: -1.2px;
+            word-spacing: 0.4px;
+            font-weight: 250%;
+            text-decoration: none;
+            font-style: italic;
+            font-variant: normal;
+            text-transform: none;
+            justify-content: center;
+            text-align: center;
+          }
+
+  </style>
+  </head>
+  <body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=omlwymde8rjuscrt3eu0nw1nxeqk5qxqt4frd16r2b976ep5"></script>
+
+              <script>
+                      tinymce.init({
+                        selector: '#EmailContent'
+                      });
+              </script>
+              <script>
+                    function  Preview()
+                    {
+                      var Department_Name=document.getElementById("Department_Name").value;
+                      var Department_URL=document.getElementById("Department_URL").value;
+                      var Phone_Number=document.getElementById("Phone_Number").value;
+                      var Department_Email=document.getElementById("Department_Email").value;
+                      var Department_Address=document.getElementById("Department_Address").value;
+                      var Department_FaceBook=document.getElementById("Department_FaceBook").value;
+                      var Department_Twitter=document.getElementById("Department_Twitter").value;
+                      var Department_Youtube=document.getElementById("Department_Youtube").value;
+
+                      var EmailContent=tinyMCE.activeEditor.getContent();
+                      //document.getElementById("EmailContent").value;
+
+                      var Preview_Area=document.getElementById("Preview_Area").innerHTML="Department : " + Department_Name +"&nbsp URL : "+Department_URL+"<br>Phone : "
+                      +Phone_Number+"&nbsp Department Email : "+Department_Email+"<br>Address : "+Department_Address+"&nbsp Facebook : "+Department_FaceBook+"<br>Twitter : "
+                      +Department_Twitter+"&nbsp Youtube : "+Department_Youtube+"<br><br>"+"Email Content : "+EmailContent;
+                    }
+
+
+
+              </script>
+
+
+              <script>
+
+
+                function download(){
+                    var a = document.body.appendChild(
+                        document.createElement("a")
+                    );
+                    a.download = "export.eml";
+
+                    var Department_Name=document.getElementById("Department_Name").value;
+                    var Department_URL=document.getElementById("Department_URL").value;
+                    var Phone_Number=document.getElementById("Phone_Number").value;
+                    var Department_Email=document.getElementById("Department_Email").value;
+                    var Department_Address=document.getElementById("Department_Address").value;
+                    var Department_FaceBook=document.getElementById("Department_FaceBook").value;
+                    var Department_Twitter=document.getElementById("Department_Twitter").value;
+                    var Department_Youtube=document.getElementById("Department_Youtube").value;
+
+                    var EmailContent=tinyMCE.activeEditor.getContent();
+                    //document.getElementById("EmailContent").value;
+
+                    var Preview_Area=document.getElementById("Preview_Area").innerHTML="Department : " + Department_Name +"&nbsp URL : "+Department_URL+"<br>Phone : "
+                    +Phone_Number+"&nbsp Department Email : "+Department_Email+"<br>Address : "+Department_Address+"&nbsp Facebook : "+Department_FaceBook+"<br>Twitter : "
+                    +Department_Twitter+"&nbsp Youtube : "+Department_Youtube+"<br><br>"+"Email Content : "+EmailContent;
+                    
+                    var emlCon="X-Unsent: 1 \n"+"Content-Type: text/html\n\n"; //"To:\n"+"Subject:\n"+
+                    a.href = "data:text/html,"+emlCon+"<html><body><p>"+ Preview_Area+"</p></body></html>"; // Grab the HTML
+                    a.click(); // Trigger a click on the element
+                  }
+
+                </script>
+
+
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12"><strong style="align-items: center;"><a href="/">
+                    <img style="display: Block; width: 45%; margin-left: auto;  margin-right: auto;" src="images\logo.png" />
+              </a></strong></div>
+          </div>
+          <div class="row">
+              <div class="col-lg-12"><strong style="align-items: center;">
+                <h1 style=" display: flex; align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;" > <em> Responsive Email Templates </em> </h1>
+              </a></strong></div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Templates Types</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                   <li class="nav-item">
+                      <a class="nav-item nav-link" href="#">Announcment Letter</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-item nav-link" href="#">Event Invitation</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-item nav-link" href="#">News Letter</a>
+                    </li>
+                      <!-- <a class="nav-item nav-link" href="#">Disabled</a> -->
+               </ul>
+                <span class="navbar-text">
+                    More refrence about the templates
+                </span>
+            </div>
+          </nav>
+        </div>
+      </div>
+        <div class="row">
+            <div class="col-lg-12"><div class="spacer5"></div></div>
+        </div>
+
+
+
+      <div class="row" id="accordion">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Department Emailing
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <!-- <table>
+                  <tr>
+                    <div class="form-group">
+                        <td><label for="usr">Name  </label></td>
+                        <td><input type="text" class="form-control" id="usr"></td>
+                      </div>
+                        <td><div class="spacer1"></div></td>
+                      <div class="form-group">
+                        <td><label for="url">URL  </label></td>
+                        <td><input type="url" class="form-control" id="URL"></td>
+                      </div>
+                  </tr>
+                  </table> -->
+                    <form class="form-horizontal">
+                        <div class="form-group" style="align-items: center;">
+                          <div class="row" style="display: flex; align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
+                              <div class="col-lg-1 text-center">  <label for="Department_Name">Sender</label> </div>
+                              <div class="col-xs-1 text-center">  </div>
+                              <div class="col-md-3 text-center">  <input type="text" class="form-control" id="Department_Name" placeholder="who is sending the email"> </div>
+                              <div class="col-xs-2 text-center">  </div>
+                              <div class="col-lg-1 text-center">  <label for="Department_URL">URL</label> </div>
+                              <div class="col-xs-1 text-center">  </div>
+                              <div class="col-md-3 text-center">  <input type="URL" class="form-control"  id="Department_URL" placeholder="Department's Website"> </div>
+                          </div>
+
+                          <div class="row"><div class="col-lg-12"><div class="spacer2"></div></div></div>
+
+                          <div class="row" style="display: flex; align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
+                              <div class="col-lg-1 text-center">  <label for="Phone_Number">Phone</label> </div>
+                              <div class="col-xs-1 text-center">  </div>
+                              <div class="col-md-3">  <input type="Number" class="form-control" id="Phone_Number" placeholder="Contact Number or Ext"> </div>
+                              <div class="col-xs-2 text-center">  </div>
+                              <div class="col-lg-1 text-center">  <label for="Department_Email">Email</label> </div>
+                              <div class="col-xs-1 text-center">  </div>
+                              <div class="col-md-3">  <input type="email" class="form-control"  id="Department_Email" placeholder="Department's Email"> </div>
+                          </div>
+
+                          <div class="row"><div class="col-lg-12"><div class="spacer2"></div></div></div>
+
+                          <div class="row" style="display: flex; align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
+                              <div class="col-lg-1 text-center">  <label for="Department_Address">Address</label> </div>
+                              <div class="col-xs-1 text-center">  </div>
+                              <div class="col-md-3">  <input type="URL" class="form-control"  id="Department_Address" placeholder="Department's Address"> </div>
+                              <div class="col-xs-2 text-center">  </div>
+                              <div class="col-lg-1 text-center">  <label for="Department_FaceBook">FaceBook</label> </div>
+                              <div class="col-xs-1 text-center">  </div>
+                              <div class="col-md-3">  <input type="URL" class="form-control" id="Department_FaceBook" placeholder="Department's FaceBook Page"> </div>
+
+                          </div>
+
+                          <div class="row"><div class="col-lg-12"><div class="spacer2"></div></div></div>
+
+                          <div class="row" style="display: flex; align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
+                              <div class="col-lg-1 text-center">  <label for="Department_Twitter">Twitter</label> </div>
+                              <div class="col-xs-1 text-center">  </div>
+                              <div class="col-md-3">  <input type="text" class="form-control" id="Department_Twitter" placeholder="Department's Twitter Page"> </div>
+                              <div class="col-xs-2 text-center">  </div>
+                              <div class="col-lg-1 text-center">  <label for="Department_Youtube">Youtube</label> </div>
+                              <div class="col-xs-1 text-center">  </div>
+                              <div class="col-md-3">  <input type="URL" class="form-control"  id="Department_Youtube" placeholder="Department's Channel"> </div>
+                          </div>
+
+
+                        </div>
+                    </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="row" id="accordion">
+    <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Email Content
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+              <div class="row row align-items-center">
+                <div class="col-lg-12">
+                    <textarea style="width:100%" name="EmailContent" id="EmailContent">
+
+                    </textarea>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="row" id="accordion">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Attached Files
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="accordion">
+    <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Preview Email
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+              <div class="row row align-items-center">
+                <div class="col-lg-12">
+                    <div style="width:100%" id="Preview_Area">
+
+                    </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="row">
+      <div class="col-lg-12"><div class="spacer5"></div></div>
+  </div>
+
+  <div class="row" style="align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
+      <!-- <div class="col-xs-2" style="align-items: center;"></div> -->
+      <div class="col-lg-3 text-center">
+        <button id="Preview" type="button" class="btn btn-outline-secondary btn-lg center-block" onclick="Preview()"> Preview </button>
+      </div>
+      <div class="col-xs-1 text-center"><div class="spacer3"></div></div>
+      <div class="col-lg-4 text-center">
+        <button id="Save_Download" type="button" class="btn btn-outline-secondary btn-lg center-block " onclick=" download()"> Save & Download </button>
+      </div>
+      <div class="col-xs-1 text-center"><div class="spacer3"></div></div>
+      <div class="col-lg-3 text-center">
+        <button type="button" class="btn btn-outline-secondary btn-lg center-block"> Reset </button>
+      </div>
+  </div>
+
+  <div class="row" >
+      <div class="col-lg-12"><div class="spacer5"></div></div>
+  </div>
+</div>
+
+
+  </body>
+</html>
