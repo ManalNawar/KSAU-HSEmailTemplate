@@ -15,10 +15,10 @@
     <style>
           body {
               background-color:#FFF9BF;
-          background: -moz-linear-gradient(left, #FFF9BF 0%, #E5E0AB 46%, #FFF9BF 50%, #FFF9BF 53%, #B69D5B 76%, #B49A56 87%, #FFF9BF 100%);
-          background: -webkit-linear-gradient(left, #E5E0AB 0%,#E5E0AB 46%,#FFF9BF 50%,#FFF9BF 53%,#B69D5B 76%,#B49A56 87%,#FFF9BF 100%);
-          background: linear-gradient(to right, #B49A56 0%,#E5E0AB 46%,#FFF9BF 50%,#FFF9BF 53%,#B69D5B 76%,#B49A56 87%,#FFF9BF 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B49A56', endColorstr='#FFF9BF',GradientType=1 );
+              background: -moz-linear-gradient(left, #FFF9BF 0%, #E5E0AB 46%, #FFF9BF 50%, #FFF9BF 53%, #B69D5B 76%, #B49A56 87%, #FFF9BF 100%);
+              background: -webkit-linear-gradient(left, #E5E0AB 0%,#E5E0AB 46%,#FFF9BF 50%,#FFF9BF 53%,#B69D5B 76%,#B49A56 87%,#FFF9BF 100%);
+              background: linear-gradient(to right, #B49A56 0%,#E5E0AB 46%,#FFF9BF 50%,#FFF9BF 53%,#B69D5B 76%,#B49A56 87%,#FFF9BF 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B49A56', endColorstr='#FFF9BF',GradientType=1 );
           }
 
           .spacer5
@@ -121,7 +121,7 @@
                     var Preview_Area=document.getElementById("Preview_Area").innerHTML="Department : " + Department_Name +"&nbsp URL : "+Department_URL+"<br>Phone : "
                     +Phone_Number+"&nbsp Department Email : "+Department_Email+"<br>Address : "+Department_Address+"&nbsp Facebook : "+Department_FaceBook+"<br>Twitter : "
                     +Department_Twitter+"&nbsp Youtube : "+Department_Youtube+"<br><br>"+"Email Content : "+EmailContent;
-                    
+
                     var emlCon="X-Unsent: 1 \n"+"Content-Type: text/html\n\n"; //"To:\n"+"Subject:\n"+
                     a.href = "data:text/html,"+emlCon+"<html><body><p>"+ Preview_Area+"</p></body></html>"; // Grab the HTML
                     a.click(); // Trigger a click on the element
