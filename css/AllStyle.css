@@ -1,0 +1,203 @@
+
+      body {
+          background-color:#FFF9BF;
+      background: -moz-linear-gradient(left, #FFF9BF 0%, #E5E0AB 46%, #FFF9BF 50%, #FFF9BF 53%, #B69D5B 76%, #B49A56 87%, #FFF9BF 100%);
+      background: -webkit-linear-gradient(left, #E5E0AB 0%,#E5E0AB 46%,#FFF9BF 50%,#FFF9BF 53%,#B69D5B 76%,#B49A56 87%,#FFF9BF 100%);
+      background: linear-gradient(to right, #B49A56 0%,#E5E0AB 46%,#FFF9BF 50%,#FFF9BF 53%,#B69D5B 76%,#B49A56 87%,#FFF9BF 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B49A56', endColorstr='#FFF9BF',GradientType=1 );
+      }
+
+      .spacer5
+      {
+        height: 45px;
+      }
+      .spacer2
+      {
+        height: 15px;
+      }
+      .spacer1
+      {
+        width: 55px;
+      }
+      .spacer3
+      {
+        width: 15px;
+        height: 15px;
+      }
+      h1
+      {
+          color: #987316;
+        font-family: "Times New Roman", Times, serif;
+        /* font-size: 300%; */
+        /* width: 45%; */
+        letter-spacing: -1.2px;
+        word-spacing: 0.4px;
+        font-weight: 250%;
+        text-decoration: none;
+        font-style: italic;
+        font-variant: normal;
+        text-transform: none;
+        justify-content: center;
+        text-align: center;
+      }
+
+       /* Font Definitions */
+       @font-face
+        {font-family:Calibri;
+        panose-1:2 15 5 2 2 2 4 3 2 4;
+        mso-font-charset:0;
+        mso-generic-font-family:swiss;
+        mso-font-pitch:variable;
+        mso-font-signature:-520092929 1073786111 9 0 415 0;}
+      @font-face
+        {font-family:Tahoma;
+        panose-1:2 11 6 4 3 5 4 4 2 4;
+        mso-font-charset:0;
+        mso-generic-font-family:swiss;
+        mso-font-pitch:variable;
+        mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+       /* Style Definitions */
+       p.MsoNormal, li.MsoNormal, div.MsoNormal
+        {mso-style-unhide:no;
+        mso-style-qformat:yes;
+        mso-style-parent:"";
+        margin:0in;
+        margin-bottom:.0001pt;
+        mso-pagination:widow-orphan;
+        font-size:11.0pt;
+        font-family:"Calibri","sans-serif";
+        mso-ascii-font-family:Calibri;
+        mso-ascii-theme-font:minor-latin;
+        mso-fareast-font-family:Calibri;
+        mso-fareast-theme-font:minor-latin;
+        mso-hansi-font-family:Calibri;
+        mso-hansi-theme-font:minor-latin;
+        mso-bidi-font-family:Arial;
+        mso-bidi-theme-font:minor-bidi;}
+      a:link, span.MsoHyperlink
+        {mso-style-noshow:yes;
+        mso-style-priority:99;
+        color:blue;
+        mso-themecolor:hyperlink;
+        /* text-decoration:underline;
+      text-underline:single; */}
+      a:visited, span.MsoHyperlinkFollowed
+        {mso-style-noshow:yes;
+        mso-style-priority:99;
+        color:purple;
+        mso-themecolor:followedhyperlink;
+        text-decoration:underline;
+        text-underline:single;}
+      p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+        {mso-style-noshow:yes;
+        mso-style-priority:99;
+        mso-style-link:"Balloon Text Char";
+        margin:0in;
+        margin-bottom:.0001pt;
+        mso-pagination:widow-orphan;
+        font-size:8.0pt;
+        font-family:"Tahoma","sans-serif";
+        mso-fareast-font-family:Calibri;
+        mso-fareast-theme-font:minor-latin;}
+      span.BalloonTextChar
+        {mso-style-name:"Balloon Text Char";
+        mso-style-noshow:yes;
+        mso-style-priority:99;
+        mso-style-unhide:no;
+        mso-style-locked:yes;
+        mso-style-link:"Balloon Text";
+        mso-ansi-font-size:8.0pt;
+        mso-bidi-font-size:8.0pt;
+        font-family:"Tahoma","sans-serif";
+        mso-ascii-font-family:Tahoma;
+        mso-hansi-font-family:Tahoma;
+        mso-bidi-font-family:Tahoma;}
+      p.article-title, li.article-title, div.article-title
+        {mso-style-name:article-title;
+        mso-style-unhide:no;
+        margin-top:0in;
+        margin-right:0in;
+        margin-bottom:13.5pt;
+        margin-left:0in;
+        line-height:18.0pt;
+        mso-pagination:widow-orphan;
+        font-size:13.5pt;
+        font-family:"Arial","sans-serif";
+        mso-fareast-font-family:"Times New Roman";
+        mso-fareast-theme-font:minor-fareast;
+        color:#AE8B32;
+        font-weight:bold;}
+      p.footer-content-left, li.footer-content-left, div.footer-content-left
+        {mso-style-name:footer-content-left;
+        mso-style-unhide:no;
+        margin-top:0in;
+        margin-right:0in;
+        margin-bottom:11.25pt;
+        margin-left:0in;
+        line-height:11.25pt;
+        mso-pagination:widow-orphan;
+        font-size:9.0pt;
+        font-family:"Times New Roman","serif";
+        mso-fareast-font-family:"Times New Roman";
+        mso-fareast-theme-font:minor-fareast;
+        color:#E2E2E2;}
+      span.EmailStyle21
+        {mso-style-type:personal-compose;
+        mso-style-noshow:yes;
+        mso-style-unhide:no;
+        mso-ansi-font-size:11.0pt;
+        mso-bidi-font-size:11.0pt;
+        font-family:"Calibri","sans-serif";
+        mso-ascii-font-family:Calibri;
+        mso-ascii-theme-font:minor-latin;
+        mso-fareast-font-family:Calibri;
+        mso-fareast-theme-font:minor-latin;
+        mso-hansi-font-family:Calibri;
+        mso-hansi-theme-font:minor-latin;
+        mso-bidi-font-family:Arial;
+        mso-bidi-theme-font:minor-bidi;
+        color:windowtext;}
+      .MsoChpDefault
+        {mso-style-type:export-only;
+        mso-default-props:yes;
+        font-size:10.0pt;
+        mso-ansi-font-size:10.0pt;
+        mso-bidi-font-size:10.0pt;
+        font-family:"Calibri","sans-serif";
+        mso-ascii-font-family:Calibri;
+        mso-ascii-theme-font:minor-latin;
+        mso-fareast-font-family:Calibri;
+        mso-fareast-theme-font:minor-latin;
+        mso-hansi-font-family:Calibri;
+        mso-hansi-theme-font:minor-latin;
+        mso-bidi-font-family:Arial;
+        mso-bidi-theme-font:minor-bidi;}
+      @page WordSection1
+        {size:8.5in 11.0in;
+        margin:1.0in 1.0in 1.0in 1.0in;
+        mso-header-margin:.5in;
+        mso-footer-margin:.5in;
+        mso-paper-source:0;}
+      div.WordSection1
+        {page:WordSection1;}
+
+       /* Style Definitions */
+       table.MsoNormalTable
+        {mso-style-name:"Table Normal";
+        mso-tstyle-rowband-size:0;
+        mso-tstyle-colband-size:0;
+        mso-style-noshow:yes;
+        mso-style-priority:99;
+        mso-style-parent:"";
+        mso-padding-alt:0in 5.4pt 0in 5.4pt;
+        mso-para-margin:0in;
+        mso-para-margin-bottom:.0001pt;
+        mso-pagination:widow-orphan;
+        font-size:10.0pt;
+        font-family:"Calibri","sans-serif";
+        mso-ascii-font-family:Calibri;
+        mso-ascii-theme-font:minor-latin;
+        mso-hansi-font-family:Calibri;
+        mso-hansi-theme-font:minor-latin;
+        mso-bidi-font-family:Arial;
+        mso-bidi-theme-font:minor-bidi;}
