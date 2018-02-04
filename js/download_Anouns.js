@@ -276,7 +276,7 @@
                       <p class=MsoNormal align=center style='text-align:center'><span\
                       style='font-family:\"Arial\",\"sans-serif\";mso-fareast-font-family:\"Times New Roman\";\
                       mso-no-proof:yes'><![if !vml]><img width=627 height=144\
-                      img src=\"http://comj.ksau-hs.edu.sa/wp-content/uploads/2016/11/comj-logo-png-1.png\"\
+                      img src=\"http://comj.ksau-hs.edu.sa/wp-content/uploads/2018/02/ksau-hs_logo_co.png\"\
                       alt=\"Description: Description: Description: C:\\Users\\alserihimo\\Downloads\\self-MyTemplate\\images\\logo2.png\"\
                       v:shapes=\"Picture_x0020_1\"><![endif]></span><span style='font-size:12.0pt;\
                       font-family:\"Arial\",\"sans-serif\";mso-fareast-font-family:\"Times New Roman\"'><o:p></o:p></span></p>\
