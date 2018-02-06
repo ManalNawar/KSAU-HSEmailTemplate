@@ -376,17 +376,21 @@ function  Preview()
      <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
       style='width:480.0pt;background:#22703C;border-collapse:collapse;\
       mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in' id=footer>\
+      <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:10.5pt'>\
+      </tr>\
       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:22.5pt'>\
-       <td width=30 style='width:22.5pt;padding:0in 0in 0in 0in;height:22.5pt'></td>\
+       <td rowspan=2 align=center valign=top><img width=42 height=40\
+       src=\"images\\image078.png\"\
+       v:shapes=\"Picture_x0020_1\"></td>\
+       <td colspan=3></td>\
+       <td rowspan=2 align=center valign=top><img width=42 height=40\
+       src=\"images\\image079.gif\"\
+       v:shapes=\"Picture_x0020_1\"></td>\
+       <td colspan=3></td>\
+       <td rowspan=2 align=center valign=top><img width=42 height=40\
+       src=\"images\\image080.gif\"\
+       v:shapes=\"Picture_x0020_1\"></td>\
       </tr>\
-      <tr style='mso-yfti-irow:1'>\
-       <td width=360 valign=top style='width:3.75in;padding:0in 0in 0in 0in'>\
-       <p class=footer-content-left align=center style='text-align:center'><span\
-       style='font-family:\"Arial\",\"sans-serif\"'>"+Department_Name+": "+Phone_Number+"<o:p></o:p></span></p>\
-       </td>\
-      </tr>\
-      <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:13.5pt'>\
-       <td width=30 style='width:22.5pt;padding:0in 0in 0in 0in;height:13.5pt'></td>\
       </tr>\
      </table>\
      </td>\
