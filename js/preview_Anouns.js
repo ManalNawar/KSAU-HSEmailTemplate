@@ -42,7 +42,7 @@ function  Preview()
        1184;mso-padding-alt:0in 0in 0in 0in'>\
        <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;\
         height:6.0pt'>\
-        <td width=350 style='width:262.5pt;padding:0in 0in 0in 0in;height:6.0pt'></td>\
+        <td width=480.0pt style='width:262.5pt;padding:0in 0in 0in 0in;height:6.0pt'></td>\
        </tr>\
       </table>\
       <div>\
@@ -108,13 +108,10 @@ function  Preview()
     <td width=640 style='width:480.0pt;background:white;padding:0in 0in 0in 0in'\
     id=header>\
     <div style='margin-top:15.0pt'>\
-    <p class=MsoNormal align=center style='text-align:center'><span\
-    style='font-family:\"Arial\",\"sans-serif\";mso-fareast-font-family:\"Times New Roman\";\
-    mso-no-proof:yes'><![if !vml]><img width=627 height=144\
+    <img width=627 height=144\
     src=\"images\\ksau-hs_logo_co.png\"\
     alt=\"Description: Description: Description: C:\\Users\\alserihimo\\Downloads\\self-MyTemplate\\images\\logo2.png\"\
-    v:shapes=\"Picture_x0020_1\"><![endif]></span><span style='font-size:12.0pt;\
-    font-family:\"Arial\",\"sans-serif\";mso-fareast-font-family:\"Times New Roman\"'><o:p></o:p></span></p>\
+    v:shapes=\"Picture_x0020_1\">\
     </div>\
     </td>\
    </tr>\
@@ -374,23 +371,48 @@ function  Preview()
     <tr style='mso-yfti-irow:6'>\
      <td width=640 style='width:480.0pt;padding:0in 0in 0in 0in'>\
      <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
-      style='width:480.0pt;background:#22703C;border-collapse:collapse;\
+      style=' table-layout: fixed; width:480.0pt; height:10pt;background:#22703C;border-collapse:separate;border-spacing: 0 0;\
       mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in' id=footer>\
-      <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:10.5pt'>\
+      <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.5pt'>\
+       <td colspan=12></td>\
       </tr>\
-      <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:22.5pt'>\
-       <td rowspan=2 align=center valign=top><img width=42 height=40\
-       src=\"images\\image078.png\"\
-       v:shapes=\"Picture_x0020_1\"></td>\
-       <td colspan=3></td>\
-       <td rowspan=2 align=center valign=top><img width=42 height=40\
-       src=\"images\\image079.gif\"\
-       v:shapes=\"Picture_x0020_1\"></td>\
-       <td colspan=3></td>\
-       <td rowspan=2 align=center valign=top><img width=42 height=40\
-       src=\"images\\image080.gif\"\
-       v:shapes=\"Picture_x0020_1\"></td>\
+      <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:23.5pt'>\
+        <td colspan=12 align=center ><span style='font-size:14.0pt;color:#CCB382;text-decoration:underline'>"+Department_Name+"</span></td>\
       </tr>\
+      <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:23.5pt'>\
+        <td colspan=12 align=center valign=top ><span style='color:white;font-size:14.0pt'>"+Department_Address+"</span></td>\
+      </tr>\
+      <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:23.5pt'>\
+       <td style=\"padding-left:130px\"colspan=3></td>\
+       <td style=\"padding-right:10px\" colspan=1 align=right valign=top><img width=20 height=22\
+       src=\"images\\phone_icon_small.png\"\
+       v:shapes=\"Picture_x0020_1\"></td>\
+       <td style=\"padding-right:20px\" colspan=2 valign=top ><span style='display: inline-block;font-size:10.0pt;color:white;text-decoration:none;text-underline:none'><span style='display: inline-block;font-size:11.0pt;color:#CCB382'>ext: </span>\
+       "+Phone_Number+"</span></td>\
+       <td style=\"padding-right:10px\" colspan=1 align=right valign=top><img width=20 height=22\
+       src=\"images\\email_icon_small.png\"\
+       v:shapes=\"Picture_x0020_1\"></td>\
+       <td colspan=2 valign=top ><span style='display: inline-block;font-size:10.0pt;color:white;text-decoration:none;text-underline:none'>"+Department_URL+"</span></td>\
+        <td style=\"padding-right:40px\" colspan=3></td>\
+      </tr>\
+      <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:23.5pt'>\
+       <td style=\"padding-left:250px\" colspan=4></td>\
+       <td  colspan=1 align=center valign=top ><img width=20 height=22\
+       src=\"images\\facebook_icon_small.png\"\
+       v:shapes=\"Picture_x0020_1\"></td>\
+       <td colspan=1 align=center valign=top ><img width=20 height=22\
+       src=\"images\\twitter_icon_small.png\"\
+       v:shapes=\"Picture_x0020_1\"></td>\
+       <td  colspan=1 align=center valign=top><img width=20 height=22\
+       src=\"images\\instagram_icon_small.png\"\
+       v:shapes=\"Picture_x0020_1\"></td>\
+       <td colspan=1 align=center valign=top><img width=20 height=22\
+       src=\"images\\youtube_icon_small.png\"\
+       v:shapes=\"Picture_x0020_1\"></td>\
+         <td style=\"padding-right:250px\" colspan=4></td>\
+      </tr>\
+      <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.5pt'>\
+       <td colspan=12></td>\
       </tr>\
      </table>\
      </td>\
