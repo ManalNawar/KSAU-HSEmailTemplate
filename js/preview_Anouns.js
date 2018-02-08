@@ -46,8 +46,8 @@ function  Preview()
        </tr>\
       </table>\
       <div>\
-      <p class=MsoNormal><span style='font-size:9.0pt;font-family:\"Arial\",\"sans-serif\";\
-      mso-fareast-font-family:\"Times New Roman\";color:#E7CBA3'>"+ Department_Name +"<o:p></o:p></span></p>\
+      <span class=MsoNormal style='text-align:center;font-size:16.0pt;font-family:\"Arial\",\"sans-serif\";\
+      mso-fareast-font-family:\"Times New Roman\";color:#E7CBA3'>"+ Email_Subject +"</span>\
       </div>\
       <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
        width=350 style='width:262.5pt;border-collapse:collapse;mso-yfti-tbllook:\
