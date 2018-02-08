@@ -383,20 +383,24 @@ function  Preview()
         <td colspan=12 align=center valign=top ><span style='color:white;font-size:14.0pt'>"+Department_Address+"</span></td>\
       </tr>\
       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:23.5pt'>\
-       <td style=\"padding-left:130px\"colspan=3></td>\
-       <td style=\"padding-right:10px\" colspan=1 align=right valign=top><img width=20 height=22\
+       <td align=center style=\"padding-left:280px\"colspan=4></td>\
+       <td style=\"max-width=20;padding-right:10px\" colspan=1 align=right valign=top><img width=20 height=22\
        src=\"images\\phone_icon_small.png\"\
        v:shapes=\"Picture_x0020_1\"></td>\
-       <td style=\"padding-right:20px\" colspan=2 valign=top ><span style='display: inline-block;font-size:10.0pt;color:white;text-decoration:none;text-underline:none'><span style='display: inline-block;font-size:11.0pt;color:#CCB382'>ext: </span>\
+       <td style=\"padding-right:40px\" colspan=1 align=left valign=top ><span style='display: inline-block;font-size:8.0pt;color:white;text-decoration:none;text-underline:none'>\
        "+Phone_Number+"</span></td>\
-       <td style=\"padding-right:10px\" colspan=1 align=right valign=top><img width=20 height=22\
+       <td style=\"max-width=20;padding-right:10px\"  colspan=1 align=right valign=top><img width=20 height=22\
        src=\"images\\email_icon_small.png\"\
        v:shapes=\"Picture_x0020_1\"></td>\
-       <td colspan=2 valign=top ><span style='display: inline-block;font-size:10.0pt;color:white;text-decoration:none;text-underline:none'>"+Department_URL+"</span></td>\
-        <td style=\"padding-right:40px\" colspan=3></td>\
+       <td align=left colspan=3 valign=top ><span style='display: inline-block;font-size:8.0pt;color:white;text-decoration:none;text-underline:none'>"+Department_URL+"</span></td>\
+        <td align=center colspan=2></td>\
+      </tr>\
+      </tr>\
+      <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:5.5pt'>\
+       <td colspan=12></td>\
       </tr>\
       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:23.5pt'>\
-       <td style=\"padding-left:250px\" colspan=4></td>\
+       <td style=\"padding-left:230px\" colspan=4></td>\
        <td  colspan=1 align=center valign=top ><img width=20 height=22\
        src=\"images\\facebook_icon_small.png\"\
        v:shapes=\"Picture_x0020_1\"></td>\
