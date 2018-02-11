@@ -2,15 +2,44 @@ function  Preview()
 {
 
   var Department_Name=document.getElementById("Department_Name").value;
+  if(!Department_Name)
+    Department_Name= document.getElementById("Department_Name").value ="COMJ I.T Department";
+
   var Department_URL=document.getElementById("Department_URL").value;
+  if(!Department_URL)
+    Department_URL= document.getElementById("Department_URL").value ="http://comj.ksau-hs.edu.sa/";
+
   var Phone_Number=document.getElementById("Phone_Number").value;
+  if(!Phone_Number)
+    Phone_Number= document.getElementById("Phone_Number").value ="5000";
+
   var Affected_Users=document.getElementById("Affected_Users").value;
+  if(!Affected_Users)
+    Affected_Users= document.getElementById("Affected_Users").value ="fudge";
+
   var Department_Address=document.getElementById("Department_Address").value;
+  if(!Department_Address)
+    Department_Address= document.getElementById("Department_Address").value ="P.O. Box 9515";
+
   var Email_Subject=document.getElementById("Email_Subject").value;
+  if(!Email_Subject)
+    Email_Subject= document.getElementById("Email_Subject").value ="comj-info@ksau-hs.edu.sa";
+
   var Important_Date=document.getElementById("Important_Date").value;
+  if(!Important_Date)
+    Important_Date= document.getElementById("Important_Date").value ="fudge";
+
   var RedLines=document.getElementById("RedLines").value;
+  if(!RedLines)
+    RedLines= document.getElementById("RedLines").value ="fudge";
+
   var Start_at=document.getElementById("Start_at").value;
+  if(!Start_at)
+    Start_at= document.getElementById("Start_at").value ="fudge";
+
   var End_at=document.getElementById("End_at").value;
+  if(!End_at)
+    End_at= document.getElementById("End_at").value ="fudge";
 
   var EmailContent=tinyMCE.activeEditor.getContent();
   //document.getElementById("EmailContent").value;

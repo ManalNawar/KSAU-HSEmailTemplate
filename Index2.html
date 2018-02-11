@@ -33,10 +33,10 @@
                             "advlist autolink lists link image charmap print preview anchor",
                             "searchreplace visualblocks code fullscreen",
                             "insertdatetime media table contextmenu paste",
-                            "powerpaste"
-                        ],
-                        toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
-
+                            // "powerpaste"
+                            ],
+                        toolbar: "paste | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+                        paste_data_images: false
                       });
               </script>
               <script>
@@ -147,11 +147,11 @@
                           <div class="row" style="display: flex; align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
                               <div class="col-lg-1 text-center">  <label for="Department_Name">Sender</label> </div>
                               <div class="col-xs-1 text-center">  </div>
-                              <div class="col-md-3 text-center">  <input type="text" class="form-control" id="Department_Name" placeholder="who is sending the email"> </div>
+                              <div class="col-md-3 text-center">  <input type="text" class="form-control" id="Department_Name" placeholder="" value=""> </div>
                               <div class="col-xs-2 text-center">  </div>
                               <div class="col-lg-1 text-center">  <label for="Department_URL">URL</label> </div>
                               <div class="col-xs-1 text-center">  </div>
-                              <div class="col-md-3 text-center">  <input type="URL" class="form-control"  id="Department_URL" placeholder="Department's Website"> </div>
+                              <div class="col-md-3 text-center">  <input type="URL" class="form-control"  id="Department_URL" placeholder="" value=""> </div>
                           </div>
 
                           <div class="row"><div class="col-lg-12"><div class="spacer2"></div></div></div>
@@ -159,11 +159,11 @@
                           <div class="row" style="display: flex; align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
                               <div class="col-lg-1 text-center">  <label for="Phone_Number">Phone</label> </div>
                               <div class="col-xs-1 text-center">  </div>
-                              <div class="col-md-3">  <input type="Number" class="form-control" id="Phone_Number" placeholder="Contact Number or Ext"> </div>
+                              <div class="col-md-3">  <input type="text" class="form-control" id="Phone_Number" placeholder="Contact Number or Ext" value=""> </div>
                               <div class="col-xs-2 text-center">  </div>
                               <div class="col-lg-1 text-center">  <label for="Department_Address">address</label> </div>
                               <div class="col-xs-1 text-center">  </div>
-                              <div class="col-md-3">  <input type="URL" class="form-control" id="Department_Address" placeholder=""> </div>
+                              <div class="col-md-3">  <input type="URL" class="form-control" id="Department_Address" placeholder="" value=""> </div>
                           </div>
 
                           <div class="row"><div class="col-lg-12"><div class="spacer2"></div></div></div>
@@ -171,11 +171,11 @@
                           <div class="row" style="display: flex; align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
                               <div class="col-lg-1 text-center">  <label for="Affected_Users">Affected Users</label> </div>
                               <div class="col-xs-1 text-center">  </div>
-                              <div class="col-md-3">  <input type="URL" class="form-control"  id="Affected_Users" placeholder=""> </div>
+                              <div class="col-md-3">  <input type="URL" class="form-control"  id="Affected_Users" placeholder="" value=""> </div>
                               <div class="col-xs-2 text-center">  </div>
                               <div class="col-lg-1 text-center">  <label for="Email_Subject">Email Subject</label> </div>
                               <div class="col-xs-1 text-center">  </div>
-                              <div class="col-md-3">  <input type="text" class="form-control"  id="Email_Subject" placeholder=""> </div>
+                              <div class="col-md-3">  <input type="text" class="form-control"  id="Email_Subject" placeholder="" value=""> </div>
 
                           </div>
 
@@ -184,11 +184,11 @@
                           <div class="row" style="display: flex; align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
                               <div class="col-lg-1 text-center">  <label for="Important_Date">Important Date</label> </div>
                               <div class="col-xs-1 text-center">  </div>
-                              <div class="col-md-3">  <input type="text" class="form-control" id="Important_Date" placeholder=" "> </div>
+                              <div class="col-md-3">  <input type="text" class="form-control" id="Important_Date" placeholder=" " value=""> </div>
                               <div class="col-xs-2 text-center">  </div>
                               <div class="col-lg-1 text-center">  <label for="RedLines">Important Notes</label> </div>
                               <div class="col-xs-1 text-center">  </div>
-                              <div class="col-md-3">  <input type="URL" class="form-control"  id="RedLines" placeholder=" "> </div>
+                              <div class="col-md-3">  <input type="URL" class="form-control"  id="RedLines" placeholder=" " value=""> </div>
                           </div>
 
                           <div class="row"><div class="col-lg-12"><div class="spacer2"></div></div></div>
@@ -196,11 +196,11 @@
                           <div class="row" style="display: flex; align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
                               <div class="col-lg-1 text-center">  <label for="Start_at">Start at</label> </div>
                               <div class="col-xs-1 text-center">  </div>
-                              <div class="col-md-3">  <input type="text" class="form-control" id="Start_at" placeholder=" "> </div>
+                              <div class="col-md-3">  <input type="text" class="form-control" id="Start_at" placeholder=" " value=""> </div>
                               <div class="col-xs-2 text-center">  </div>
                               <div class="col-lg-1 text-center">  <label for="End_at">End at</label> </div>
                               <div class="col-xs-1 text-center">  </div>
-                              <div class="col-md-3">  <input type="URL" class="form-control"  id="End_at" placeholder=" "> </div>
+                              <div class="col-md-3">  <input type="URL" class="form-control"  id="End_at" placeholder=" " value=""> </div>
                           </div>
 
                         </div>
