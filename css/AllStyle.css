@@ -6,7 +6,20 @@
       background: linear-gradient(to right, #B49A56 0%,#E5E0AB 46%,#FFF9BF 50%,#FFF9BF 53%,#B69D5B 76%,#B49A56 87%,#FFF9BF 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B49A56', endColorstr='#FFF9BF',GradientType=1 );
       }
+      .btn {
+        border: none;
+        outline: none;
+        padding: 10px 16px;
+        background-color: #f1f1f1;
+        color: black;
+        cursor: pointer;
+      }
 
+      /* Style the active class (and buttons on mouse-over) */
+      .active, .btn:hover {
+        background-color: #666;
+        color: white;
+      }
       .spacer5
       {
         height: 45px;
@@ -77,14 +90,14 @@
       a:link, span.MsoHyperlink
         {mso-style-noshow:yes;
         mso-style-priority:99;
-        color:blue;
+        color:black;
         mso-themecolor:hyperlink;
         /* text-decoration:underline;
       text-underline:single; */}
       a:visited, span.MsoHyperlinkFollowed
         {mso-style-noshow:yes;
         mso-style-priority:99;
-        color:purple;
+        color:black;
         mso-themecolor:followedhyperlink;
         text-decoration:underline;
         text-underline:single;}

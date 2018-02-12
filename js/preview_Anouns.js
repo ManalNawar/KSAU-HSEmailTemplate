@@ -18,12 +18,12 @@ var selected_template="Announcment_Letter";
 function  Preview()
 {
 
-    if(selected_template="Announcment_Letter")
-            Preview_Announcment_Letter();
-    else if(selected_template="Event_Invitation")
-            Preview_Event_Invitation();
-    else
-            Preview_Announcment_Letter();
+    if(selected_template=="Announcment_Letter"){
+            Preview_Announcment_Letter();}
+    else if(selected_template=="Event_Invitation"){
+            Preview_Event_Invitation();}
+    else{
+            Preview_Announcment_Letter();}
 
 
 
@@ -34,7 +34,7 @@ function Preview_Announcment_Letter(){
 
   Department_Name=document.getElementById("Department_Name").value;
  if(!Department_Name)
-   Department_Name= document.getElementById("Department_Name").value ="COMJ I.T Department";
+   Department_Name= document.getElementById("Department_Name").value ="COMJ-IT Department";
 
  Department_URL=document.getElementById("Department_URL").value;
  if(!Department_URL)
@@ -46,7 +46,7 @@ function Preview_Announcment_Letter(){
 
  Affected_Users=document.getElementById("Affected_Users").value;
  if(!Affected_Users)
-   Affected_Users= document.getElementById("Affected_Users").value ="fudge";
+   Affected_Users= document.getElementById("Affected_Users").value ="All Users";
 
  Department_Address=document.getElementById("Department_Address").value;
  if(!Department_Address)
@@ -54,27 +54,44 @@ function Preview_Announcment_Letter(){
 
  Email_Subject=document.getElementById("Email_Subject").value;
  if(!Email_Subject)
-   Email_Subject= document.getElementById("Email_Subject").value ="comj-info@ksau-hs.edu.sa";
+   Email_Subject= document.getElementById("Email_Subject").value ="Voltage Test";
 
  Important_Date=document.getElementById("Important_Date").value;
- if(!Important_Date)
-   Important_Date= document.getElementById("Important_Date").value ="fudge";
+ if(!Important_Date){
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; //January is 0!
+        var yyyy = today.getFullYear();
+
+        if(dd<10) {
+            dd = '0'+dd
+        }
+
+        if(mm<10) {
+            mm = '0'+mm
+        }
+
+        today = mm + '/' + dd + '/' + yyyy;
+        Important_Date= document.getElementById("Important_Date").value =today;
+ }
+
 
  RedLines=document.getElementById("RedLines").value;
- if(!RedLines)
-   RedLines= document.getElementById("RedLines").value ="fudge";
+ // if(!RedLines)
+ //   RedLines= document.getElementById("RedLines").value ="fudge";
 
  Start_at=document.getElementById("Start_at").value;
- if(!Start_at)
-   Start_at= document.getElementById("Start_at").value ="fudge";
+ if(!Start_at){
+   Start_at= document.getElementById("Start_at").value ="not specified";
 
+}
  End_at=document.getElementById("End_at").value;
  if(!End_at)
-   End_at= document.getElementById("End_at").value ="fudge";
+   End_at= document.getElementById("End_at").value ="not specified";
 
  EmailContent=tinyMCE.activeEditor.getContent();
  //document.getElementById("EmailContent").value;
-  $('#collapseFour').toggle();
+  $('#collapseFour').collapse("show");
 
 
 Preview_Area=document.getElementById("Preview_Area").innerHTML="\
@@ -109,7 +126,7 @@ Preview_Area=document.getElementById("Preview_Area").innerHTML="\
     </table>\
     <div>\
     <span class=MsoNormal style='text-align:center;font-size:16.0pt;font-family:\"Arial\",\"sans-serif\";\
-    mso-fareast-font-family:\"Times New Roman\";color:#E7CBA3'>"+ Email_Subject +"</span>\
+    mso-fareast-font-family:\"Times New Roman\";color:#E7CBA3'>"+ Department_Name +"</span>\
     </div>\
     <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
      width=350 style='width:262.5pt;border-collapse:collapse;mso-yfti-tbllook:\
@@ -498,6 +515,231 @@ Preview_Area=document.getElementById("Preview_Area").innerHTML="\
 
 function Preview_Event_Invitation(){
 
+
+    Department_Name=document.getElementById("Department_Name").value;
+   if(!Department_Name)
+     Department_Name= document.getElementById("Department_Name").value ="COMJ I.T Department";
+
+   Department_URL=document.getElementById("Department_URL").value;
+   if(!Department_URL)
+     Department_URL= document.getElementById("Department_URL").value ="http://comj.ksau-hs.edu.sa/";
+
+   Phone_Number=document.getElementById("Phone_Number").value;
+   if(!Phone_Number)
+     Phone_Number= document.getElementById("Phone_Number").value ="5000";
+
+   Department_Address=document.getElementById("Department_Address").value;
+   if(!Department_Address)
+     Department_Address= document.getElementById("Department_Address").value ="P.O. Box 9515";
+
+   Email_Subject=document.getElementById("Email_Subject").value;
+   if(!Email_Subject)
+     Email_Subject= document.getElementById("Email_Subject").value ="comj-info@ksau-hs.edu.sa";
+
+
+
+   EmailContent=tinyMCE.activeEditor.getContent();
+   //document.getElementById("EmailContent").value;
+      $('#collapseFour').collapse("show");
+
+
+  Preview_Area=document.getElementById("Preview_Area").innerHTML="\
+  <div class=WordSection1>\
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=\"100%\"\
+   style='width:100.0%;background:#ECECEC;border-collapse:collapse;mso-yfti-tbllook:\
+   1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
+    <td style='padding:0cm 0cm 0cm 0cm'>\
+    <div align=center>\
+    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
+     style='width:480.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;\
+     mso-padding-alt:0cm 0cm 0cm 0cm'>\
+     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.0pt'>\
+      <td width=640 style='width:480.0pt;padding:0cm 0cm 0cm 0cm;height:15.0pt'></td>\
+     </tr>\
+     <tr style='mso-yfti-irow:1'>\
+      <td width=640 style='width:480.0pt;padding:0cm 0cm 0cm 0cm'>\
+      <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
+       style='width:480.0pt;background:#AE8B32;border-collapse:collapse;\
+       mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm' id=top-bar>\
+       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
+        <td width=15 style='width:11.25pt;padding:0cm 0cm 0cm 0cm'></td>\
+        <td width=350 style='width:262.5pt;padding:0cm 0cm 0cm 0cm'>\
+        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
+         width=350 style='width:262.5pt;border-collapse:collapse;mso-yfti-tbllook:\
+         1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
+         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;\
+          height:6.0pt'>\
+          <td width=350 style='width:262.5pt;padding:0cm 0cm 0cm 0cm;height:6.0pt'></td>\
+         </tr>\
+        </table>\
+        <div>\
+        <p class=MsoNormal><span style='text-align:center;font-size:16.0pt;font-family:\"Arial\",sans-serif;\
+        mso-fareast-font-family:\"Times New Roman\";color:#E7CBA3'>"+Department_Name+"<o:p></o:p></span></p>\
+        </div>\
+        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
+         width=350 style='width:262.5pt;border-collapse:collapse;mso-yfti-tbllook:\
+         1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
+         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;\
+          height:6.0pt'>\
+          <td width=350 style='width:262.5pt;padding:0cm 0cm 0cm 0cm;height:6.0pt'></td>\
+         </tr>\
+        </table>\
+        </td>\
+        <td width=30 style='width:22.5pt;padding:0cm 0cm 0cm 0cm'></td>\
+        <td width=255 style='width:191.25pt;padding:0cm 0cm 0cm 0cm'>\
+        <div align=right>\
+        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
+         width=255 style='width:191.25pt;border-collapse:collapse;mso-yfti-tbllook:\
+         1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
+         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;\
+          height:6.0pt'>\
+          <td width=255 style='width:191.25pt;padding:0cm 0cm 0cm 0cm;height:\
+          6.0pt'></td>\
+         </tr>\
+        </table>\
+        </div>\
+        <p class=MsoNormal align=right style='text-align:right'><span\
+        style='font-family:\"Arial\",sans-serif;mso-fareast-font-family:\"Times New Roman\";\
+        color:#E7CBA3;display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>\
+        <div align=right>\
+        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
+         style='border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:\
+         0cm 0cm 0cm 0cm'>\
+         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
+          <td style='padding:0cm 0cm 0cm 0cm'></td>\
+         </tr>\
+        </table>\
+        </div>\
+        <p class=MsoNormal align=right style='text-align:right'><span\
+        style='font-family:\"Arial\",sans-serif;mso-fareast-font-family:\"Times New Roman\";\
+        color:#E7CBA3;display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>\
+        <div align=right>\
+        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
+         width=255 style='width:191.25pt;border-collapse:collapse;mso-yfti-tbllook:\
+         1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
+         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;\
+          height:6.0pt'>\
+          <td width=255 style='width:191.25pt;padding:0cm 0cm 0cm 0cm;height:\
+          6.0pt'></td>\
+         </tr>\
+        </table>\
+        </div>\
+        <p class=MsoNormal align=right style='text-align:right'><span\
+        style='font-size:10.0pt'><o:p></o:p></span></p>\
+        </td>\
+        <td width=15 style='width:11.25pt;padding:0cm 0cm 0cm 0cm'></td>\
+       </tr>\
+      </table>\
+      </td>\
+     </tr>\
+     <tr style='mso-yfti-irow:2'>\
+      <td width=640 style='width:480.0pt;background:white;padding:0cm 0cm 0cm 0cm'\
+      id=header>\
+      <div style='margin-top:15.0pt'>\
+      <img width=627 height=144\
+      src=\"http://comj.ksau-hs.edu.sa/wp-content/uploads/2018/02/ksau-hs_logo_co.png\"\
+      alt=\"Description: Description: Description: C:\\Users\\alserihimo\\Downloads\\self-MyTemplate\\images\\logo2.png\"\
+      v:shapes=\"Picture_x0020_1\">\
+      </div>\
+      </td>\
+     </tr>\
+     <tr style='mso-yfti-irow:3;height:22.5pt'>\
+      <td width=640 style='width:480.0pt;background:white;padding:0cm 0cm 0cm 0cm;\
+      height:22.5pt'></td>\
+     </tr>\
+     <tr style='mso-yfti-irow:4' id=simple-content-row>\
+      <td width=640 style='width:480.0pt;background:white;padding:0cm 0cm 0cm 0cm'>\
+      <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
+       style='width:480.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;\
+       mso-padding-alt:0cm 0cm 0cm 0cm'>\
+       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
+        <td width=30 style='width:22.5pt;padding:0cm 0cm 0cm 0cm'></td>\
+        <td width=580 style='width:435.0pt;padding:0cm 0cm 0cm 0cm'>\
+        <p class=MsoNormal><span style='font-family:\"Arial\",sans-serif;\
+        mso-fareast-font-family:\"Times New Roman\";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>\
+        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
+         width=592 style='width:443.65pt;border-collapse:collapse;mso-yfti-tbllook:\
+         1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
+         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
+          <td width=592 style='width:443.65pt;padding:0cm 0cm 0cm 0cm'>\
+          <p class=abdo-title style='text-align:justify'><span\
+          style='font-size:11.0pt'>"+EmailContent+"<span\
+          dir=RTL></span>.<o:p></o:p></span></span></b></p>\
+          </td>\
+         </tr>\
+        </table>\
+        <p class=MsoNormal><span style='font-family:\"Arial\",sans-serif;\
+        mso-fareast-font-family:\"Times New Roman\";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>\
+        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
+         width=580 style='width:435.0pt;border-collapse:collapse;mso-yfti-tbllook:\
+         1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
+         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
+          <td width=580 style='width:435.0pt;padding:0cm 0cm 0cm 0cm'></td>\
+         </tr>\
+        </table>\
+        <p class=MsoNormal><span style='font-family:\"Arial\",sans-serif;\
+        mso-fareast-font-family:\"Times New Roman\";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>\
+        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
+         width=580 style='width:435.0pt;border-collapse:collapse;mso-yfti-tbllook:\
+         1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
+         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
+          <td width=580 style='width:435.0pt;padding:0cm 0cm 0cm 0cm'></td>\
+         </tr>\
+        </table>\
+        <p class=MsoNormal><span style='font-family:\"Arial\",sans-serif;\
+        mso-fareast-font-family:\"Times New Roman\";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>\
+        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
+         width=580 style='width:435.0pt;border-collapse:collapse;mso-yfti-tbllook:\
+         1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
+         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
+          <td width=580 style='width:435.0pt;padding:0cm 0cm 0cm 0cm'>\
+          <p class=hassan-title style='margin-bottom:0cm;margin-bottom:.0001pt'>College\
+          of Medicine � Jeddah <o:p></o:p></p>\
+          </td>\
+         </tr>\
+        </table>\
+        <p class=MsoNormal><span style='font-size:10.0pt'><o:p></o:p></span></p>\
+        </td>\
+        <td width=30 style='width:22.5pt;padding:0cm 0cm 0cm 0cm'></td>\
+       </tr>\
+      </table>\
+      </td>\
+     </tr>\
+     <tr style='mso-yfti-irow:5;height:11.25pt'>\
+      <td width=640 style='width:480.0pt;background:white;padding:0cm 0cm 0cm 0cm;\
+      height:11.25pt'></td>\
+     </tr>\
+     <tr style='mso-yfti-irow:6'>\
+      <td width=640 style='width:480.0pt;padding:0cm 0cm 0cm 0cm'>\
+      <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
+       style='width:480.0pt;background:#22703C;border-collapse:collapse;\
+       mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm' id=footer>\
+       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:22.5pt'>\
+        <td width=30 style='width:22.5pt;padding:0cm 0cm 0cm 0cm;height:22.5pt'></td>\
+       </tr>\
+       <tr style='mso-yfti-irow:1'>\
+        <td width=360 valign=top style='width:270.0pt;padding:0cm 0cm 0cm 0cm'></td>\
+       </tr>\
+       <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:13.5pt'>\
+        <td width=30 style='width:22.5pt;padding:0cm 0cm 0cm 0cm;height:13.5pt'></td>\
+       </tr>\
+      </table>\
+      </td>\
+     </tr>\
+     <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes;height:45.0pt'>\
+      <td width=640 style='width:480.0pt;padding:0cm 0cm 0cm 0cm;height:45.0pt'></td>\
+     </tr>\
+    </table>\
+    </div>\
+    </td>\
+   </tr>\
+  </table>\
+  <p class=MsoNormal><span lang=EN-US style='font-family:\"Times New Roman\",serif;\
+  mso-fareast-font-family:\"Times New Roman\";mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>\
+  <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>\
+  </div>";
+
 }
 
 
@@ -678,6 +920,7 @@ function Choises(clicked_id){
   if(clicked_id=="Event_Invitation")
   {
     selected_template="Event_Invitation";
+    $('#collapseFour').collapse("hide");
     $('#Affected_Users_Label').hide();
     $('#Affected_Users').hide();
 
@@ -693,10 +936,21 @@ function Choises(clicked_id){
     $('#End_at_Label').hide();
     $('#End_at').hide();
 
+    $('#Department_URL_Label').hide();
+    $('#Department_URL').hide();
+
+    // $("#Email_Subject_Label").addClass("aligncenter");
+    // $("#Email_Subject").addClass("aligncenter");
+
   }
-  else if(clicked_id=="Announcment_Letter")
+  else //if(clicked_id=="Announcment_Letter")
   {
     selected_template="Announcment_Letter";
+        $('#collapseFour').collapse("hide");
+
+      $('#Department_URL_Label').show();
+      $('#Department_URL').show();
+
     $('#Affected_Users_Label').show();
     $('#Affected_Users').show();
 

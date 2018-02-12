@@ -36,32 +36,32 @@
                       // "powerpaste"
                       ],
                   toolbar: "paste | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
-                  toolbar : "imageupload",
-                                        setup: function(editor) {
-                                            var inp = $('<input id="tinymce-uploader" type="file" name="pic" accept="image/*" style="display:none">');
-                                            $(editor.getElement()).parent().append(inp);
-
-                                            inp.on("change",function(){
-                                                var input = inp.get(0);
-                                                var file = input.files[0];
-                                                var fr = new FileReader();
-                                                fr.onload = function() {
-                                                    var img = new Image();
-                                                    img.src = fr.result;
-                                                    editor.insertContent('<img src="'+img.src+'"/>');
-                                                    inp.val('');
-                                                }
-                                                fr.readAsDataURL(file);
-                                            });
-
-                                            editor.addButton( 'imageupload', {
-                                                text:"Attach Files",
-                                                icon: false,
-                                                onclick: function(e) {
-                                                    inp.trigger('click');
-                                                }
-                                            });
-                                        }
+                  // toolbar : "imageupload",
+                  //                       setup: function(editor) {
+                  //                           var inp = $('<input id="tinymce-uploader" type="file" name="pic" accept="image/*" style="display:none">');
+                  //                           $(editor.getElement()).parent().append(inp);
+                  //
+                  //                           inp.on("change",function(){
+                  //                               var input = inp.get(0);
+                  //                               var file = input.files[0];
+                  //                               var fr = new FileReader();
+                  //                               fr.onload = function() {
+                  //                                   var img = new Image();
+                  //                                   img.src = fr.result;
+                  //                                   editor.insertContent('<img src="'+img.src+'"/>');
+                  //                                   inp.val('');
+                  //                               }
+                  //                               fr.readAsDataURL(file);
+                  //                           });
+                  //
+                  //                           editor.addButton( 'imageupload', {
+                  //                               text:"Attach Files",
+                  //                               icon: false,
+                  //                               onclick: function(e) {
+                  //                                   inp.trigger('click');
+                  //                               }
+                  //                           });
+                  //                       }
 
                 });
         </script>
@@ -87,24 +87,34 @@
                 </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                   <li class="nav-item" id="Announcment_Letter" onclick="Choises(this.id)">
-                      <a class="nav-item nav-link" href="#Announcment_Letter">Announcment Letter</a>
+                   <li class="nav-item " id="Announcment_Letter" onclick="Choises(this.id)">
+                      <a class="nav-item nav-link active" href="#Announcment_Letter" style="color: black">Maintenance & Safty Test</a>
                     </li>
                     <li class="nav-item" id="Event_Invitation" onclick="Choises(this.id)">
-                      <a class="nav-item nav-link" href="#Event_Invitation">Event Invitation</a>
+                      <a class="nav-item nav-link" href="#Event_Invitation" style="color: black">Simple Letter</a>
                     </li>
-                    <li class="nav-item" id="News_Letter" onclick="Choises(this.id)">
-                      <a class="nav-item nav-link" href="#News_Letter">News Letter</a>
-                    </li>
+                    <!-- <li class="nav-item" id="News_Letter" onclick="Choises(this.id)">
+                      <a class="nav-item nav-link" href="#News_Letter" style="color: black">Events & News</a>
+                    </li> -->
                       <!-- <a class="nav-item nav-link" href="#">Disabled</a> -->
                </ul>
-                <span class="navbar-text">
+                <!-- <span class="navbar-text">
                     More refrence about the templates
-                </span>
+                </span> -->
             </div>
           </nav>
         </div>
       </div>
+
+                    <script>
+                                      $(document).ready(function(){
+                              $('ul li a').click(function(){
+                                $('li a').removeClass("active");
+                                $(this).addClass("active");
+                            });
+                            });
+                    </script>
+
         <div class="row">
             <div class="col-lg-12"><div class="spacer5"></div></div>
         </div>
@@ -140,19 +150,19 @@
                     <form class="form-horizontal">
                         <div class="form-group" style="align-items: center;">
                           <div class="row" style="display: flex; align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
-                              <div class="col-lg-1 text-center">  <label for="Department_Name">Sender</label> </div>
+                              <div class="col-lg-1 text-center">  <label for="Department_Name">From</label> </div>
                               <div class="col-xs-1 text-center">  </div>
                               <div class="col-md-3 text-center">  <input type="text" class="form-control" id="Department_Name" placeholder="" value=""> </div>
                               <div class="col-xs-2 text-center">  </div>
-                              <div class="col-lg-1 text-center">  <label for="Department_URL">URL</label> </div>
+                              <div class="col-lg-1 text-center">  <label for="Email_Subject" id="Email_Subject_Label">Title</label> </div>
                               <div class="col-xs-1 text-center">  </div>
-                              <div class="col-md-3 text-center">  <input type="URL" class="form-control"  id="Department_URL" placeholder="" value=""> </div>
+                              <div class="col-md-3">  <input type="text" class="form-control"  id="Email_Subject" placeholder="" value=""> </div>
                           </div>
 
                           <div class="row"><div class="col-lg-12"><div class="spacer2"></div></div></div>
 
                           <div class="row" style="display: flex; align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
-                              <div class="col-lg-1 text-center">  <label for="Phone_Number">Phone</label> </div>
+                              <div class="col-lg-1 text-center">  <label for="Phone_Number">Phone Ext</label> </div>
                               <div class="col-xs-1 text-center">  </div>
                               <div class="col-md-3">  <input type="text" class="form-control" id="Phone_Number" placeholder="Contact Number or Ext" value=""> </div>
                               <div class="col-xs-2 text-center">  </div>
@@ -164,13 +174,13 @@
                           <div class="row"><div class="col-lg-12"><div class="spacer2"></div></div></div>
 
                           <div class="row" style="display: flex; align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
+                              <div class="col-lg-1 text-center">  <label for="Department_URL" id="Department_URL_Label">URL</label> </div>
+                              <div class="col-xs-1 text-center">  </div>
+                              <div class="col-md-3 text-center">  <input type="URL" class="form-control"  id="Department_URL" placeholder="" value=""> </div>
+                              <div class="col-xs-2 text-center">  </div>
                               <div class="col-lg-1 text-center">  <label for="Affected_Users" id="Affected_Users_Label">Affected Users</label> </div>
                               <div class="col-xs-1 text-center">  </div>
                               <div class="col-md-3">  <input type="URL" class="form-control"  id="Affected_Users" placeholder="" value=""> </div>
-                              <div class="col-xs-2 text-center">  </div>
-                              <div class="col-lg-1 text-center">  <label for="Email_Subject">Email Subject</label> </div>
-                              <div class="col-xs-1 text-center">  </div>
-                              <div class="col-md-3">  <input type="text" class="form-control"  id="Email_Subject" placeholder="" value=""> </div>
 
                           </div>
 
@@ -232,7 +242,7 @@
         </div>
       </div>
     </div>
-<div class="row" id="accordion">
+<!-- <div class="row" id="accordion">
     <div class="col-lg-12">
       <div class="card">
         <div class="card-header" id="headingThree">
@@ -247,7 +257,7 @@
               <div class="container">
                 <div class="col-md-8 col-md-offset-2">
                 <form method="POST" action="#" enctype="multipart/form-data">
-                	<!-- COMPONENT START -->
+
                 	<div class="form-group">
                 		<div class="input-group input-file" name="Fichier1" id="Fichier1">
                 			<span class="input-group-btn">
@@ -259,6 +269,7 @@
                     		</span>
                 		</div>
                 	</div>
+
                 </form>
               </div>
             </div>
@@ -266,7 +277,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="row" id="accordion">
     <div class="col-lg-12">
@@ -278,7 +289,7 @@
                 </button>
               </h5>
             </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+            <div id="collapseFour" class="collapse collapsed" aria-labelledby="headingFour" data-parent="#accordion">
               <div class="card-body">
               <div class="row row align-items-center">
                 <div class="col-lg-12">
@@ -305,16 +316,16 @@
   <div class="row" style="align-items: center; justify-content: center; margin-left: auto;  margin-right: auto;">
       <!-- <div class="col-xs-2" style="align-items: center;"></div> -->
       <div class="col-lg-3 text-center">
-        <button id="Preview" type="button"  class="btn btn-outline-secondary btn-lg center-block" onclick="Preview()"> Preview </button>
+        <button id="Preview" type="button"  class="btn btn-outline-secondary btn-lg center-block" onclick="Preview()"> Preview & reload </button>
       </div>
       <div class="col-xs-1 text-center"><div class="spacer3"></div></div>
       <div class="col-lg-4 text-center">
         <button id="Save_Download" type="button" class="btn btn-outline-secondary btn-lg center-block " onclick=" download()"> Save & Download </button>
       </div>
-      <div class="col-xs-1 text-center"><div class="spacer3"></div></div>
+      <!-- <div class="col-xs-1 text-center"><div class="spacer3"></div></div>
       <div class="col-lg-3 text-center">
         <button type="button" class="btn btn-outline-secondary btn-lg center-block"> Reset </button>
-      </div>
+      </div> -->
   </div>
 
   <div class="row" >
