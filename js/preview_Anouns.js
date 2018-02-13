@@ -534,7 +534,7 @@ function Preview_Event_Invitation(){
 
    Email_Subject=document.getElementById("Email_Subject").value;
    if(!Email_Subject)
-     Email_Subject= document.getElementById("Email_Subject").value ="comj-info@ksau-hs.edu.sa";
+     Email_Subject= document.getElementById("Email_Subject").value ="";
 
 
 
@@ -694,8 +694,7 @@ function Preview_Event_Invitation(){
          1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
          <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
           <td width=580 style='width:435.0pt;padding:0cm 0cm 0cm 0cm'>\
-          <p class=hassan-title style='margin-bottom:0cm;margin-bottom:.0001pt'>College\
-          of Medicine � Jeddah <o:p></o:p></p>\
+          <p class=hassan-title style='margin-bottom:0cm;margin-bottom:.0001pt'><o:p></o:p></p>\
           </td>\
          </tr>\
         </table>\
