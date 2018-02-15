@@ -35,35 +35,35 @@
                       "advlist autolink lists link image charmap print preview anchor",
                       "searchreplace visualblocks code fullscreen",
                       "insertdatetime media table contextmenu paste",
-                      // "powerpaste"
+                      //"powerpaste"
                       ],
-                      paste_data_images: true,
-                  toolbar: "paste | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | imageupload",
-                                        setup: function(editor) {
-                                            var inp = $('<input id="tinymce-uploader" type="file" name="pic" accept="image/*" style="display:none">');
-                                            $(editor.getElement()).parent().append(inp);
-
-                                            inp.on("change",function(){
-                                                var input = inp.get(0);
-                                                var file = input.files[0];
-                                                var fr = new FileReader();
-                                                fr.onload = function() {
-                                                    var img = new Image();
-                                                    img.src = fr.result;
-                                                    editor.insertContent('<img src="'+img.src+'"/>');
-                                                    inp.val('');
-                                                }
-                                                fr.readAsDataURL(file);
-                                            });
-
-                                            editor.addButton( 'imageupload', {
-                                                text:"Attach Files",
-                                                icon: false,
-                                                onclick: function(e) {
-                                                    inp.trigger('click');
-                                                }
-                                            });
-                                        }
+                      paste_data_images: true
+                  // toolbar: "paste | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | imageupload",
+                  //                       setup: function(editor) {
+                  //                           var inp = $('<input id="tinymce-uploader" type="file" name="pic" accept="image/*" style="display:none">');
+                  //                           $(editor.getElement()).parent().append(inp);
+                  //
+                  //                           inp.on("change",function(){
+                  //                               var input = inp.get(0);
+                  //                               var file = input.files[0];
+                  //                               var fr = new FileReader();
+                  //                               fr.onload = function() {
+                  //                                   var img = new Image();
+                  //                                   img.src = fr.result;
+                  //                                   editor.insertContent('<img src="'+img.src+'"/>');
+                  //                                   inp.val('');
+                  //                               }
+                  //                               fr.readAsDataURL(file);
+                  //                           });
+                  //
+                  //                           editor.addButton( 'imageupload', {
+                  //                               text:"Attach Files",
+                  //                               icon: false,
+                  //                               onclick: function(e) {
+                  //                                   inp.trigger('click');
+                  //                               }
+                  //                           });
+                  //                       }
 
                 });
 //                 $(document).ready(function() {
@@ -206,7 +206,7 @@
                               <div class="col-xs-1 text-center">  </div>
                               <div class="col-md-3">  <input type="text" class="form-control" id="Phone_Number" placeholder="Contact Number or Ext" value=""> </div>
                               <div class="col-xs-2 text-center">  </div>
-                              <div class="col-lg-1 text-center">  <label for="Department_Address">address</label> </div>
+                              <div class="col-lg-1 text-center">  <label for="Department_Address">Email Address</label> </div>
                               <div class="col-xs-1 text-center">  </div>
                               <div class="col-md-3">  <input type="URL" class="form-control" id="Department_Address" placeholder="" value=""> </div>
                           </div>

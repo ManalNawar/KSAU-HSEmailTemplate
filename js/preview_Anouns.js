@@ -530,11 +530,11 @@ function Preview_Event_Invitation(){
 
    Department_Address=document.getElementById("Department_Address").value;
    if(!Department_Address)
-     Department_Address= document.getElementById("Department_Address").value ="P.O. Box 9515";
+     Department_Address= document.getElementById("Department_Address").value ="COMJ-IT@njha.med.sa";
 
-   Email_Subject=document.getElementById("Email_Subject").value;
-   if(!Email_Subject)
-     Email_Subject= document.getElementById("Email_Subject").value ="";
+     Email_Subject=document.getElementById("Email_Subject").value;
+     if(!Email_Subject)
+       Email_Subject= document.getElementById("Email_Subject").value ="Letter";
 
 
 
@@ -564,7 +564,7 @@ function Preview_Event_Invitation(){
        style='width:480.0pt;background:#AE8B32;border-collapse:collapse;\
        mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm' id=top-bar>\
        <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
-        <td width=15 style='width:11.25pt;padding:0cm 0cm 0cm 0cm'></td>\
+        <td width=15 style='width:5pt;padding:0cm 0cm 0cm 0cm'></td>\
         <td width=350 style='width:262.5pt;padding:0cm 0cm 0cm 0cm'>\
         <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
          width=350 style='width:262.5pt;border-collapse:collapse;mso-yfti-tbllook:\
@@ -574,8 +574,8 @@ function Preview_Event_Invitation(){
           <td width=350 style='width:262.5pt;padding:0cm 0cm 0cm 0cm;height:6.0pt'></td>\
          </tr>\
         </table>\
-        <div>\
-        <p class=MsoNormal><span style='text-align:center;font-size:9.0pt;font-family:\"Arial\",sans-serif;\
+        <div align=left>\
+        <p class=MsoNormal><span style='font-size:9.0pt;font-family:\"Arial\",sans-serif;\
         mso-fareast-font-family:\"Times New Roman\";color:#E7CBA3'>"+Department_Name+"<o:p></o:p></span></p>\
         </div>\
         <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
@@ -672,20 +672,20 @@ function Preview_Event_Invitation(){
       <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=670\
        style='width:480.0pt;background:#22703C;border-collapse:collapse;\
        mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm' id=footer>\
-       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:22.5pt'>\
+       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:13.5pt'>\
         <td width=30 style='width:22.5pt;padding:0cm 0cm 0cm 0cm;height:22.5pt'></td>\
        </tr>\
-       <tr style='mso-yfti-irow:1'>\
-        <td width=360 valign=top style='width:270.0pt;padding:0cm 0cm 0cm 0cm'></td>\
+       <tr style='mso-yfti-irow:1;height:13.5pt'>\
+        <td width=360 valign=top style='width:3.75in;padding:0in 0in 0in 0in'>\
+        <p class=footer-content-left align=center style='text-align:center'><span\
+        style='font-family:\"Arial\",\"sans-serif\";font-size:9.0pt'>"+Department_Address+" : "+Phone_Number+"</span></p>\
+        </td>\
        </tr>\
        <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:13.5pt'>\
         <td width=30 style='width:22.5pt;padding:0cm 0cm 0cm 0cm;height:13.5pt'></td>\
        </tr>\
       </table>\
       </td>\
-     </tr>\
-     <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes;height:45.0pt'>\
-      <td width=670 style='width:480.0pt;padding:0cm 0cm 0cm 0cm;height:45.0pt'></td>\
      </tr>\
     </table>\
     </div>\
@@ -707,7 +707,21 @@ function download(){
     var a = document.body.appendChild(
         document.createElement("a")
     );
-    a.download = "export.eml";
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if(dd<10) {
+        dd = '0'+dd
+    }
+
+    if(mm<10) {
+        mm = '0'+mm
+    }
+
+    today = mm + '' + dd + '' + yyyy;
+    a.download = Email_Subject+"_"+today+".eml";
     var download_style="<Style>\
                         @font-face\
                          {font-family:Calibri;\
