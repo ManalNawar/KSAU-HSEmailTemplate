@@ -35,35 +35,38 @@
                       "advlist autolink lists link image charmap print preview anchor",
                       "searchreplace visualblocks code fullscreen",
                       "insertdatetime media table contextmenu paste",
+                      "textcolor",
                       //"powerpaste"
-                      ],
-                      paste_data_images: true
-                  // toolbar: "paste | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | imageupload",
-                  //                       setup: function(editor) {
-                  //                           var inp = $('<input id="tinymce-uploader" type="file" name="pic" accept="image/*" style="display:none">');
-                  //                           $(editor.getElement()).parent().append(inp);
-                  //
-                  //                           inp.on("change",function(){
-                  //                               var input = inp.get(0);
-                  //                               var file = input.files[0];
-                  //                               var fr = new FileReader();
-                  //                               fr.onload = function() {
-                  //                                   var img = new Image();
-                  //                                   img.src = fr.result;
-                  //                                   editor.insertContent('<img src="'+img.src+'"/>');
-                  //                                   inp.val('');
-                  //                               }
-                  //                               fr.readAsDataURL(file);
-                  //                           });
-                  //
-                  //                           editor.addButton( 'imageupload', {
-                  //                               text:"Attach Files",
-                  //                               icon: false,
-                  //                               onclick: function(e) {
-                  //                                   inp.trigger('click');
-                  //                               }
-                  //                           });
-                  //                       }
+
+                    ],
+                      paste_data_images: true,
+                  toolbar: "fontsizeselect | fontselect | paste | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | imageupload | forecolor backcolor",
+                  font_formats: 'Arial=arial,helvetica,sans-serif;Courier New=courier new,courier,monospace;AkrutiKndPadmini=Akpdmi-n'
+                                        // setup: function(editor) {
+                                        //     var inp = $('<input id="tinymce-uploader" type="file" name="pic" accept="image/*" style="display:none">');
+                                        //     $(editor.getElement()).parent().append(inp);
+                                        //
+                                        //     inp.on("change",function(){
+                                        //         var input = inp.get(0);
+                                        //         var file = input.files[0];
+                                        //         var fr = new FileReader();
+                                        //         fr.onload = function() {
+                                        //             var img = new Image();
+                                        //             img.src = fr.result;
+                                        //             editor.insertContent('<img src="'+img.src+'"/>');
+                                        //             inp.val('');
+                                        //         }
+                                        //         fr.readAsDataURL(file);
+                                        //     });
+                                        //
+                                        //     editor.addButton( 'imageupload', {
+                                        //         text:"Attach Files",
+                                        //         icon: false,
+                                        //         onclick: function(e) {
+                                        //             inp.trigger('click');
+                                        //         }
+                                        //     });
+                                        // }
 
                 });
 //                 $(document).ready(function() {
