@@ -26,15 +26,18 @@
 
         <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=omlwymde8rjuscrt3eu0nw1nxeqk5qxqt4frd16r2b976ep5"></script>
         <script>
+
+
                 tinymce.init({
                   selector: '#EmailContent',
-
+                   height : "640",
                   plugins: [
                       "advlist autolink lists link image charmap print preview anchor",
                       "searchreplace visualblocks code fullscreen",
                       "insertdatetime media table contextmenu paste",
                       // "powerpaste"
                       ],
+                      paste_data_images: true,
                   toolbar: "paste | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | imageupload",
                                         setup: function(editor) {
                                             var inp = $('<input id="tinymce-uploader" type="file" name="pic" accept="image/*" style="display:none">');
@@ -63,6 +66,44 @@
                                         }
 
                 });
+//                 $(document).ready(function() {
+//   tinymce.init({
+//     selector: "textarea",
+//     theme: "modern",
+//     paste_data_images: true,
+//     plugins: [
+//       "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+//       "searchreplace wordcount visualblocks visualchars code fullscreen",
+//       "insertdatetime media nonbreaking save table contextmenu directionality",
+//       "emoticons template paste textcolor colorpicker textpattern"
+//     ],
+//     toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+//     toolbar2: "print preview media | forecolor backcolor emoticons",
+//     image_advtab: true,
+//     file_picker_callback: function(callback, value, meta) {
+//       if (meta.filetype == 'image') {
+//         $('#upload').trigger('click');
+//         $('#upload').on('change', function() {
+//           var file = this.files[0];
+//           var reader = new FileReader();
+//           reader.onload = function(e) {
+//             callback(e.target.result, {
+//               alt: ''
+//             });
+//           };
+//           reader.readAsDataURL(file);
+//         });
+//       }
+//     },
+//     templates: [{
+//       title: 'Test template 1',
+//       content: 'Test 1'
+//     }, {
+//       title: 'Test template 2',
+//       content: 'Test 2'
+//     }]
+//   });
+// });
         </script>
 
         <div class="container">
@@ -87,7 +128,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                    <li class="nav-item " id="Announcment_Letter" onclick="Choises(this.id)">
-                      <a class="nav-item nav-link active" href="#Announcment_Letter" style="color: black">Maintenance & Safty Test</a>
+                      <a class="nav-item nav-link active" href="#Announcment_Letter" style="color: black">Maintenance & Safety Test</a>
                     </li>
                     <li class="nav-item" id="Event_Invitation" onclick="Choises(this.id)">
                       <a class="nav-item nav-link" href="#Event_Invitation" style="color: black">Simple Letter</a>
@@ -232,7 +273,7 @@
                     <textarea style="width:100%" name="EmailContent" id="EmailContent">
 
                     </textarea>
-
+                    <input name="image" type="file" id="upload" class="hidden" onchange="">
                 </div>
               </div>
 
@@ -241,7 +282,7 @@
         </div>
       </div>
     </div>
-<!-- <div class="row" id="accordion">
+<div class="row" id="accordion">
     <div class="col-lg-12">
       <div class="card">
         <div class="card-header" id="headingThree">
@@ -276,7 +317,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div class="row" id="accordion">
     <div class="col-lg-12">

@@ -102,15 +102,15 @@ Preview_Area=document.getElementById("Preview_Area").innerHTML="\
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
   <td style='padding:0in 0in 0in 0in'>\
 <div align=center>\
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=670\
  style='width:480.0pt;margin-left:7.5pt;border-collapse:collapse;mso-yfti-tbllook:\
  1184;mso-padding-alt:0in 0in 0in 0in'>\
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.0pt'>\
-  <td width=640 style='width:480.0pt;padding:0in 0in 0in 0in;height:15.0pt'></td>\
+  <td width=670 style='width:480.0pt;padding:0in 0in 0in 0in;height:15.0pt'></td>\
  </tr>\
  <tr style='mso-yfti-irow:1'>\
-  <td width=640 style='width:480.0pt;padding:0in 0in 0in 0in'>\
-  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
+  <td width=670 style='width:480.0pt;padding:0in 0in 0in 0in'>\
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=670\
    style='width:480.0pt;background:#AE8B32;border-collapse:collapse;\
    mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in' id=top-bar>\
    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
@@ -184,7 +184,7 @@ Preview_Area=document.getElementById("Preview_Area").innerHTML="\
   </td>\
  </tr>\
  <tr style='mso-yfti-irow:2'>\
-  <td width=640 style='width:480.0pt;background:white;padding:0in 0in 0in 0in'\
+  <td width=670 style='width:480.0pt;background:white;padding:0in 0in 0in 0in'\
   id=header>\
   <div style='margin-top:15.0pt'>\
   <img width=627 height=144\
@@ -195,12 +195,12 @@ Preview_Area=document.getElementById("Preview_Area").innerHTML="\
   </td>\
  </tr>\
  <tr style='mso-yfti-irow:3;height:22.5pt'>\
-  <td width=640 style='width:480.0pt;background:white;padding:0in 0in 0in 0in;\
+  <td width=670 style='width:480.0pt;background:white;padding:0in 0in 0in 0in;\
   height:22.5pt'></td>\
   </tr>\
   <tr style='mso-yfti-irow:4' id=simple-content-row>\
-   <td width=640 style='width:480.0pt;background:white;padding:0in 0in 0in 0in'>\
-   <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
+   <td width=670 style='width:480.0pt;background:white;padding:0in 0in 0in 0in'>\
+   <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=670\
     style='width:480.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;\
     mso-padding-alt:0in 0in 0in 0in'>\
     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
@@ -448,8 +448,8 @@ Preview_Area=document.getElementById("Preview_Area").innerHTML="\
    </td>\
   </tr>\
   <tr style='mso-yfti-irow:6'>\
-   <td width=640 style='width:480.0pt;padding:0in 0in 0in 0in'>\
-   <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
+   <td width=670 style='width:480.0pt;padding:0in 0in 0in 0in'>\
+   <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=670\
     style=' table-layout: fixed; width:480.0pt; height:10pt;background:#22703C;border-collapse:separate;border-spacing: 0 0;\
     mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in' id=footer>\
     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.5pt'>\
@@ -501,7 +501,7 @@ Preview_Area=document.getElementById("Preview_Area").innerHTML="\
    </td>\
   </tr>\
   <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes;height:45.0pt'>\
-   <td width=640 style='width:480.0pt;padding:0in 0in 0in 0in;height:45.0pt'></td>\
+   <td width=670 style='width:480.0pt;padding:0in 0in 0in 0in;height:45.0pt'></td>\
   </tr>\
  </table>\
  </div>\
@@ -538,6 +538,7 @@ function Preview_Event_Invitation(){
 
 
 
+
    EmailContent=tinyMCE.activeEditor.getContent();
    //document.getElementById("EmailContent").value;
       $('#collapseFour').collapse("show");
@@ -551,15 +552,15 @@ function Preview_Event_Invitation(){
    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
     <td style='padding:0cm 0cm 0cm 0cm'>\
     <div align=center>\
-    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
+    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=670\
      style='width:480.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;\
      mso-padding-alt:0cm 0cm 0cm 0cm'>\
      <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.0pt'>\
-      <td width=640 style='width:480.0pt;padding:0cm 0cm 0cm 0cm;height:15.0pt'></td>\
+      <td width=670 style='width:480.0pt;padding:0cm 0cm 0cm 0cm;height:15.0pt'></td>\
      </tr>\
      <tr style='mso-yfti-irow:1'>\
-      <td width=640 style='width:480.0pt;padding:0cm 0cm 0cm 0cm'>\
-      <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
+      <td width=670 style='width:480.0pt;padding:0cm 0cm 0cm 0cm'>\
+      <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=670\
        style='width:480.0pt;background:#AE8B32;border-collapse:collapse;\
        mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm' id=top-bar>\
        <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
@@ -574,7 +575,7 @@ function Preview_Event_Invitation(){
          </tr>\
         </table>\
         <div>\
-        <p class=MsoNormal><span style='text-align:center;font-size:16.0pt;font-family:\"Arial\",sans-serif;\
+        <p class=MsoNormal><span style='text-align:center;font-size:9.0pt;font-family:\"Arial\",sans-serif;\
         mso-fareast-font-family:\"Times New Roman\";color:#E7CBA3'>"+Department_Name+"<o:p></o:p></span></p>\
         </div>\
         <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
@@ -586,58 +587,15 @@ function Preview_Event_Invitation(){
          </tr>\
         </table>\
         </td>\
-        <td width=30 style='width:22.5pt;padding:0cm 0cm 0cm 0cm'></td>\
-        <td width=255 style='width:191.25pt;padding:0cm 0cm 0cm 0cm'>\
-        <div align=right>\
-        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
-         width=255 style='width:191.25pt;border-collapse:collapse;mso-yfti-tbllook:\
-         1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
-         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;\
-          height:6.0pt'>\
-          <td width=255 style='width:191.25pt;padding:0cm 0cm 0cm 0cm;height:\
-          6.0pt'></td>\
-         </tr>\
-        </table>\
-        </div>\
-        <p class=MsoNormal align=right style='text-align:right'><span\
-        style='font-family:\"Arial\",sans-serif;mso-fareast-font-family:\"Times New Roman\";\
-        color:#E7CBA3;display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>\
-        <div align=right>\
-        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
-         style='border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:\
-         0cm 0cm 0cm 0cm'>\
-         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
-          <td style='padding:0cm 0cm 0cm 0cm'></td>\
-         </tr>\
-        </table>\
-        </div>\
-        <p class=MsoNormal align=right style='text-align:right'><span\
-        style='font-family:\"Arial\",sans-serif;mso-fareast-font-family:\"Times New Roman\";\
-        color:#E7CBA3;display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>\
-        <div align=right>\
-        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
-         width=255 style='width:191.25pt;border-collapse:collapse;mso-yfti-tbllook:\
-         1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
-         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;\
-          height:6.0pt'>\
-          <td width=255 style='width:191.25pt;padding:0cm 0cm 0cm 0cm;height:\
-          6.0pt'></td>\
-         </tr>\
-        </table>\
-        </div>\
-        <p class=MsoNormal align=right style='text-align:right'><span\
-        style='font-size:10.0pt'><o:p></o:p></span></p>\
-        </td>\
-        <td width=15 style='width:11.25pt;padding:0cm 0cm 0cm 0cm'></td>\
        </tr>\
       </table>\
       </td>\
      </tr>\
      <tr style='mso-yfti-irow:2'>\
-      <td width=640 style='width:480.0pt;background:white;padding:0cm 0cm 0cm 0cm'\
+      <td style='width:480.0pt;background:white'\
       id=header>\
-      <div style='margin-top:15.0pt'>\
-      <img width=627 height=144\
+      <div align=center >\
+      <img width=600 height=175 Style='margin-right:5pt;margin-left:5pt;max-width=525px;max-height=157px'\
       src=\"http://comj.ksau-hs.edu.sa/wp-content/uploads/2018/02/ksau-hs_logo_co.png\"\
       alt=\"Description: Description: Description: C:\\Users\\alserihimo\\Downloads\\self-MyTemplate\\images\\logo2.png\"\
       v:shapes=\"Picture_x0020_1\">\
@@ -645,17 +603,17 @@ function Preview_Event_Invitation(){
       </td>\
      </tr>\
      <tr style='mso-yfti-irow:3;height:22.5pt'>\
-      <td width=640 style='width:480.0pt;background:white;padding:0cm 0cm 0cm 0cm;\
+      <td width=670 style='width:480.0pt;background:white;padding:0cm 0cm 0cm 0cm;\
       height:22.5pt'></td>\
      </tr>\
      <tr style='mso-yfti-irow:4' id=simple-content-row>\
-      <td width=640 style='width:480.0pt;background:white;padding:0cm 0cm 0cm 0cm'>\
-      <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
+      <td width=670 style='width:480.0pt;background:white;padding:0cm 0cm 0cm 0cm'>\
+      <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=670\
        style='width:480.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;\
        mso-padding-alt:0cm 0cm 0cm 0cm'>\
        <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
         <td width=30 style='width:22.5pt;padding:0cm 0cm 0cm 0cm'></td>\
-        <td width=580 style='width:435.0pt;padding:0cm 0cm 0cm 0cm'>\
+        <td width=670 style='width:480.0pt;padding:0cm 0cm 0cm 0cm'>\
         <p class=MsoNormal><span style='font-family:\"Arial\",sans-serif;\
         mso-fareast-font-family:\"Times New Roman\";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>\
         <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
@@ -665,7 +623,7 @@ function Preview_Event_Invitation(){
           <td width=592 style='width:443.65pt;padding:0cm 0cm 0cm 0cm'>\
           <p class=abdo-title style='text-align:justify'><span\
           style='font-size:11.0pt'>"+EmailContent+"<span\
-          dir=RTL></span>.<o:p></o:p></span></span></b></p>\
+          dir=RTL></span><o:p></o:p></span></span></b></p>\
           </td>\
          </tr>\
         </table>\
@@ -706,12 +664,12 @@ function Preview_Event_Invitation(){
       </td>\
      </tr>\
      <tr style='mso-yfti-irow:5;height:11.25pt'>\
-      <td width=640 style='width:480.0pt;background:white;padding:0cm 0cm 0cm 0cm;\
+      <td width=670 style='width:480.0pt;background:white;padding:0cm 0cm 0cm 0cm;\
       height:11.25pt'></td>\
      </tr>\
      <tr style='mso-yfti-irow:6'>\
-      <td width=640 style='width:480.0pt;padding:0cm 0cm 0cm 0cm'>\
-      <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=640\
+      <td width=670 style='width:480.0pt;padding:0cm 0cm 0cm 0cm'>\
+      <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=670\
        style='width:480.0pt;background:#22703C;border-collapse:collapse;\
        mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm' id=footer>\
        <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:22.5pt'>\
@@ -727,7 +685,7 @@ function Preview_Event_Invitation(){
       </td>\
      </tr>\
      <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes;height:45.0pt'>\
-      <td width=640 style='width:480.0pt;padding:0cm 0cm 0cm 0cm;height:45.0pt'></td>\
+      <td width=670 style='width:480.0pt;padding:0cm 0cm 0cm 0cm;height:45.0pt'></td>\
      </tr>\
     </table>\
     </div>\
