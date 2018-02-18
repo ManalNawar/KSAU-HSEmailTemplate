@@ -20,110 +20,27 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- include summernote css/js -->
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
 
                 <script type="text/javascript"  src="js/preview_Anouns.js"></script>
-                <!-- <script type="text/javascript"  src="js/download_Anouns.js"></script> -->
+                <script>
+                                  $(document).ready(function(){
+                          $('ul li a').click(function(){
+                            $('li a').removeClass("active");
+                            $(this).addClass("active");
+                        });
+                        });
+                </script>
+                <script>
+                  $(document).ready(function() {
+                      $('#EmailContent').summernote();
+                  });
+                </script>
 
-        <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=omlwymde8rjuscrt3eu0nw1nxeqk5qxqt4frd16r2b976ep5"></script>
-        <script>
 
 
-                tinymce.init({
-                  selector: '#EmailContent',
-                   height : "640",
-                  plugins: [
-                      "advlist autolink lists link image charmap print preview anchor",
-                      "searchreplace visualblocks code fullscreen",
-                      "insertdatetime media table contextmenu paste",
-                      "textcolor",
-                      "directionality",
-                      //"powerpaste"
-
-                    ],
-                      paste_data_images: true,
-                      advlist_bullet_styles: "default,circle,disc,square",
-                      advlist_number_styles: "default,lower-alpha,lower-greek,lower-roman,upper-alpha,upper-roman",
-                 toolbar: "fontselect | fontsizeselect | paste | insertfile undo redo | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | ltr rtl | link image | imageupload | forecolor backcolor",
-                // font_formats: 'Arial=arial,helvetica,sans-serif;Courier New=courier new,courier,monospace;AkrutiKndPadmini=Akpdmi-n',
-                 formats: {
-                            alignleft: {selector : 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes : 'left'},
-                            aligncenter: {selector : 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes : 'center'},
-                            alignright: {selector : 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes : 'right'},
-                            alignjustify: {selector : 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes : 'full'},
-                            bold: {inline : 'span', 'classes' : 'bold'},
-                            italic: {inline : 'span', 'classes' : 'italic'},
-                            underline: {inline : 'span', 'classes' : 'underline', exact : true},
-                            strikethrough: {inline : 'del'},
-                            forecolor: {inline : 'span', classes : 'forecolor', styles : {color : '%value'}},
-                            hilitecolor: {inline : 'span', classes : 'hilitecolor', styles : {backgroundColor : '%value'}},
-                            custom_format: {block : 'h1', attributes : {title : 'Header'}, styles : {color : 'red'}}
-                }
-                                        // setup: function(editor) {
-                                        //     var inp = $('<input id="tinymce-uploader" type="file" name="pic" accept="image/*" style="display:none">');
-                                        //     $(editor.getElement()).parent().append(inp);
-                                        //
-                                        //     inp.on("change",function(){
-                                        //         var input = inp.get(0);
-                                        //         var file = input.files[0];
-                                        //         var fr = new FileReader();
-                                        //         fr.onload = function() {
-                                        //             var img = new Image();
-                                        //             img.src = fr.result;
-                                        //             editor.insertContent('<img src="'+img.src+'"/>');
-                                        //             inp.val('');
-                                        //         }
-                                        //         fr.readAsDataURL(file);
-                                        //     });
-                                        //
-                                        //     editor.addButton( 'imageupload', {
-                                        //         text:"Attach Files",
-                                        //         icon: false,
-                                        //         onclick: function(e) {
-                                        //             inp.trigger('click');
-                                        //         }
-                                        //     });
-                                        // }
-
-                });
-//                 $(document).ready(function() {
-//   tinymce.init({
-//     selector: "textarea",
-//     theme: "modern",
-//     paste_data_images: true,
-//     plugins: [
-//       "advlist autolink lists link image charmap print preview hr anchor pagebreak",
-//       "searchreplace wordcount visualblocks visualchars code fullscreen",
-//       "insertdatetime media nonbreaking save table contextmenu directionality",
-//       "emoticons template paste textcolor colorpicker textpattern"
-//     ],
-//     toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
-//     toolbar2: "print preview media | forecolor backcolor emoticons",
-//     image_advtab: true,
-//     file_picker_callback: function(callback, value, meta) {
-//       if (meta.filetype == 'image') {
-//         $('#upload').trigger('click');
-//         $('#upload').on('change', function() {
-//           var file = this.files[0];
-//           var reader = new FileReader();
-//           reader.onload = function(e) {
-//             callback(e.target.result, {
-//               alt: ''
-//             });
-//           };
-//           reader.readAsDataURL(file);
-//         });
-//       }
-//     },
-//     templates: [{
-//       title: 'Test template 1',
-//       content: 'Test 1'
-//     }, {
-//       title: 'Test template 2',
-//       content: 'Test 2'
-//     }]
-//   });
-// });
-        </script>
 
         <div class="container">
           <div class="row">
@@ -164,15 +81,6 @@
           </nav>
         </div>
       </div>
-
-                    <script>
-                                      $(document).ready(function(){
-                              $('ul li a').click(function(){
-                                $('li a').removeClass("active");
-                                $(this).addClass("active");
-                            });
-                            });
-                    </script>
 
         <div class="row">
             <div class="col-lg-12"><div class="spacer5"></div></div>
