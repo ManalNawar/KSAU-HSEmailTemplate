@@ -24,6 +24,7 @@
 
                 <script type="text/javascript"  src="js/preview_Anouns.js"></script>
                <script type="text/javascript"  src="ckeditor/ckeditor.js"></script>
+               <script type="text/javascript"  src="ckfinder/ckfinder.js"></script>
                 <script>
                                   $(document).ready(function(){
                           $('ul li a').click(function(){
@@ -196,7 +197,7 @@
 
                     </textarea>
                     <script>
-                          CKEDITOR.config.extraPlugins = 'imageuploader';
+                          CKFinder.setupCKEditor();
                           CKEDITOR.replace( 'EmailContent' );
                     </script>
                 </div>
