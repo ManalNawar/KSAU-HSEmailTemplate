@@ -2,7 +2,7 @@ var Department_Name;
 var Department_URL;
 var Phone_Number;
 var Affected_Users;
-var Department_Address;
+var Department_URL;
 var Email_Subject;
 var Important_Date;
 var RedLines;
@@ -48,9 +48,9 @@ function Preview_Announcment_Letter(){
  if(!Affected_Users)
    Affected_Users= document.getElementById("Affected_Users").value ="All Users";
 
- Department_Address=document.getElementById("Department_Address").value;
- if(!Department_Address)
-   Department_Address= document.getElementById("Department_Address").value ="P.O. Box 9515";
+ Department_URL=document.getElementById("Department_URL").value;
+ if(!Department_URL)
+   Department_URL= document.getElementById("Department_URL").value ="P.O. Box 9515";
 
  Email_Subject=document.getElementById("Email_Subject").value;
  if(!Email_Subject)
@@ -459,7 +459,7 @@ Preview_Area=document.getElementById("Preview_Area").innerHTML="\
       <td colspan=12 align=center ><span style='font-size:14.0pt;color:#CCB382;text-decoration:underline'>"+Department_Name+"</span></td>\
     </tr>\
     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:23.5pt'>\
-      <td colspan=12 align=center valign=top ><span style='color:white;font-size:14.0pt'>"+Department_Address+"</span></td>\
+      <td colspan=12 align=center valign=top ><span style='color:white;font-size:14.0pt'>"+Department_URL+"</span></td>\
     </tr>\
     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:23.5pt'>\
      <td align=center style=\"padding-left:280px\"colspan=4></td>\
@@ -528,9 +528,9 @@ function Preview_Event_Invitation(){
    if(!Phone_Number)
      Phone_Number= document.getElementById("Phone_Number").value ="5000";
 
-   Department_Address=document.getElementById("Department_Address").value;
-   if(!Department_Address)
-     Department_Address= document.getElementById("Department_Address").value ="COMJ-IT@njha.med.sa";
+   Department_URL=document.getElementById("Department_URL").value;
+   if(!Department_URL)
+     Department_URL= document.getElementById("Department_URL").value ="COMJ-IT@njha.med.sa";
 
      Email_Subject=document.getElementById("Email_Subject").value;
      if(!Email_Subject)
@@ -678,7 +678,7 @@ function Preview_Event_Invitation(){
        <tr style='mso-yfti-irow:1;height:13.5pt'>\
         <td width=360 valign=top style='width:3.75in;padding:0in 0in 0in 0in'>\
         <p class=footer-content-left align=center style='text-align:center'><span\
-        style='font-family:\"Arial\",\"sans-serif\";font-size:9.0pt'>"+Department_Address+" : "+Phone_Number+"</span></p>\
+        style='font-family:\"Arial\",\"sans-serif\";font-size:9.0pt'>"+Department_URL+" : "+Phone_Number+"</span></p>\
         </td>\
        </tr>\
        <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:13.5pt'>\
@@ -892,23 +892,13 @@ function Choises(clicked_id){
   {
     selected_template="Event_Invitation";
     $('#collapseFour').collapse("hide");
-    $('#Affected_Users_Label').hide();
-    $('#Affected_Users').hide();
 
-    $('#Important_Date_Label').hide();
-    $('#Important_Date').hide();
-
-    $('#RedLines_Label').hide();
-    $('#RedLines').hide();
-
-    $('#Start_at_Label').hide();
-    $('#Start_at').hide();
-
-    $('#End_at_Label').hide();
-    $('#End_at').hide();
-
-    $('#Department_URL_Label').hide();
-    $('#Department_URL').hide();
+    $('#toHide1').hide();
+    $('#toHide2').hide();
+    $('#toHide3').hide();
+    $('#toHide4').hide();
+    $('#toHide5').hide();
+    $('#toHide6').hide();
 
     // $("#Email_Subject_Label").addClass("aligncenter");
     // $("#Email_Subject").addClass("aligncenter");
@@ -919,24 +909,12 @@ function Choises(clicked_id){
     selected_template="Announcment_Letter";
         $('#collapseFour').collapse("hide");
 
-      $('#Department_URL_Label').show();
-      $('#Department_URL').show();
-
-    $('#Affected_Users_Label').show();
-    $('#Affected_Users').show();
-
-    $('#Important_Date_Label').show();
-    $('#Important_Date').show();
-
-    $('#RedLines_Label').show();
-    $('#RedLines').show();
-
-    $('#Start_at_Label').show();
-    $('#Start_at').show();
-
-    $('#End_at_Label').show();
-    $('#End_at').show();
-
+    $('#toHide1').show();
+    $('#toHide2').show();
+    $('#toHide3').show();
+    $('#toHide4').show();
+    $('#toHide5').show();
+    $('#toHide6').show();
   }
 }
 
