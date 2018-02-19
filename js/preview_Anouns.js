@@ -89,7 +89,7 @@ function Preview_Announcment_Letter(){
  if(!End_at)
    End_at= document.getElementById("End_at").value ="not specified";
 
- EmailContent=CKEDITOR.instances.EmailContent.getData();
+ EmailContent=CKEDITOR.instances.EmailContent.document.getBody().getHtml();
  //document.getElementById("EmailContent").value;
   $('#collapseFour').collapse("show");
 
@@ -539,7 +539,7 @@ function Preview_Event_Invitation(){
 
 
 
-   EmailContent=CKEDITOR.instances.EmailContent.getData();
+   EmailContent=CKEDITOR.instances.EmailContent.document.getBody().getHtml();
    //document.getElementById("EmailContent").value;
       $('#collapseFour').collapse("show");
 
