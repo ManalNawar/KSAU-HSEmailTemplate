@@ -18,6 +18,7 @@ var Youtube_Account;
 var news_image;
 
 
+
 function loadFooter(){
 
   Twitter_Account=document.getElementById("Twitter_Account").value;
@@ -569,55 +570,44 @@ function Preview_Event_Invitation(){
 
 
   Preview_Area=document.getElementById("Preview_Area").innerHTML="\
+  <html><head></head><body>\
   <div>\
   <table border=0 cellspacing=0 cellpadding=0 width=\"100%\"\
-   style='width:100.0%;background:#ECECEC;border-collapse:collapse;mso-yfti-tbllook:\
-   1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
-   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
+   style='width:100.0%;background:#ECECEC;border-collapse:collapse'>\
+   <tr>\
     <td style='padding:0cm 0cm 0cm 0cm'>\
     <div align=center>\
     <table border=0 cellspacing=0 cellpadding=0 width=600\
-     style='width:460.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;\
-     mso-padding-alt:0cm 0cm 0cm 0cm'>\
-     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.0pt'>\
-      <td width=600 style='width:460.0pt;padding:0cm 0cm 0cm 0cm;height:15.0pt'></td>\
+     style='width:460.0pt;border-collapse:collapse'>\
+     <tr style='height:15'>\
+      <td width=600 style='width:460.0pt;padding:0cm 0cm 0cm 0cm;height:15'></td>\
      </tr>\
-     <tr style='mso-yfti-irow:1'>\
+     <tr>\
       <td width=600 style='width:460.0pt;padding:0cm 0cm 0cm 0cm'>\
       <table border=0 cellspacing=0 cellpadding=0 width=600\
-       style='width:460.0pt;background:#AE8B32;border-collapse:collapse;\
-       mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm' id=top-bar>\
-       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
+       style='width:460.0pt;background:#AE8B32;border-collapse:collapse'>\
+       <tr>\
         <td width=15 style='width:5pt;padding:0cm 0cm 0cm 0cm'></td>\
         <td width=350 style='width:460.0pt;padding:0cm 0cm 0cm 0cm'>\
-        <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0\
-         width=350 style='width:460.0pt;border-collapse:collapse;mso-yfti-tbllook:\
-         1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
-         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;\
-          height:6.0pt'>\
-          <td width=350 style='width:460.0pt;padding:0cm 0cm 0cm 0cm;height:6.0pt'></td>\
+        <table border=0 cellspacing=0 cellpadding=0\
+         width=350 style='width:460.0pt;border-collapse:collapse'>\
+         <tr style='\
+          height:3.0pt'>\
+          <td width=350 style='width:460.0pt;padding:0cm 0cm 0cm 0cm;height:3.0pt'>\
+          </td>\
          </tr>\
         </table>\
         <div align=left>\
-        <p><span style='font-size:9.0pt;font-family:\"Arial\",sans-serif;\
-        mso-fareast-font-family:\"Times New Roman\";color:#E7CBA3'>"+Department_Name+"</span></p>\
-        </div>\
-        <table border=0 cellspacing=0 cellpadding=0\
-         width=350 style='width:460.0pt;border-collapse:collapse;mso-yfti-tbllook:\
-         1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
-         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;\
-          height:6.0pt'>\
-          <td width=350 style='width:460.0pt;padding:0cm 0cm 0cm 0cm;height:6.0pt'></td>\
-         </tr>\
-        </table>\
+          <p padding:5px 5px 5px 5px;><span style='font-size:9.0pt;font-family:\"Arial\",sans-serif;color:#E7CBA3'>"+"<o:p></o:p>"+Department_Name+"</span></p>\
+          </div>\
         </td>\
        </tr>\
       </table>\
       </td>\
      </tr>\
-     <tr style='mso-yfti-irow:2'>\
+     <tr>\
       <td style='width:460.0pt;background:white'\
-      id=header>\
+      >\
       <div align=center >\
       <img width=600 height=175 Style='margin-right:3pt;margin-left:3pt;max-width=450px;max-height=157px'\
       src=\"http://comj.ksau-hs.edu.sa/wp-content/uploads/2018/02/ksau-hs_logo_co.png\"\
@@ -626,21 +616,19 @@ function Preview_Event_Invitation(){
       </div>\
       </td>\
      </tr>\
-     <tr style='mso-yfti-irow:4' id=simple-content-row>\
+     <tr id=simple-content-row>\
       <td width=600 style='max-width:443.65pt;width:460.0pt;background:white;padding:0cm 0cm 0cm 0cm'>\
       <table border=0 cellspacing=0 cellpadding=0 width=600\
-       style='max-width:443.65pt;width:460.0pt;border-collapse:collapse;mso-yfti-tbllook:1184;\
-       mso-padding-alt:0cm 0cm 0cm 0cm'>\
-       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
+       style='max-width:443.65pt;width:460.0pt;border-collapse:collapse'>\
+       <tr>\
         <td width=600 style='max-width:443.65pt;width:460.0pt;padding:0cm 0cm 0cm 0cm'>\
         <table>\
          <tr>\
          <td width=600 style='max-width:443.65pt;width:460.0pt;padding:0cm 0cm 0cm 0cm'>\
            <table border=0 cellspacing=0 cellpadding=0\
-          width=592 style='max-width:443.65pt;width:443.65pt;border-collapse:collapse;mso-yfti-tbllook:\
-            1184;mso-padding-alt:0cm 0cm 0cm 0cm'>\
-           <tr style='max-width:443.65pt;mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>\
-           <td width=592 style='width:443.65pt;max-width:443.65pt;padding:0cm 0cm 0cm 0cm'>\
+          width=592 style='max-width:443.65pt;width:443.65pt;border-collapse:collapse'>\
+           <tr style='max-width:443.65pt;padding:0px 15px 0px 15px'>\
+           <td width=592 style='width:443.65pt;max-width:443.65pt;padding:0px 15px 0px 15px'>\
            "+EmailContent+"</b>\
              </td>\
            </tr>\
@@ -651,23 +639,25 @@ function Preview_Event_Invitation(){
       </table>\
       </td>\
      </tr>\
-     <tr style='mso-yfti-irow:5;height:11.25pt'>\
+     <tr style='height:11.25pt'>\
       <td width=600 style='width:460.0pt;background:white;padding:0cm 0cm 0cm 0cm;\
       height:11.25pt'></td>\
      </tr>\
-     <tr style='mso-yfti-irow:6'>\
-      <td width=600 style='width:460.0pt;padding:0cm 0cm 0cm 0cm'>\
+     <tr>\
+      <td style='width:460.0pt;padding:0cm 0cm 0cm 0cm'>\
       <table border=0 cellspacing=0 cellpadding=0 width=600\
-       style='width:460.0pt;background:#22703C;border-collapse:collapse;\
-       mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm' id=footer>\
-       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.0pt'>\
-        <td width=600 style='width:460.0pt;padding:0cm 0cm 0cm 0cm;height:15.0pt'></td>\
+       style='width:460.0pt;background:#22703C;border-collapse:collapse'>\
+       <tr style='height:5.0pt'>\
+        <td style='width:460.0pt;padding:0cm 0cm 0cm 0cm;height:5.0pt'></td>\
        </tr>\
-       <tr style='mso-yfti-irow:1;height:13.5pt'>\
+       <tr style='height:10.5pt'>\
         <td width=360 valign=top style='width:3.75in;padding:0in 0in 0in 0in'>\
-        <p class=footer-content-left align=center style='text-align:center'><span\
-        style='font-family:\"Arial\",\"sans-serif\";font-size:9.0pt'>"+Department_Address+"&emsp;&emsp;"+Phone_Number+"</span></p>\
+        <p align=center style='text-align:center'><span\
+        style='font-family:\"Arial\",\"sans-serif\";font-size:9.0pt;color:#ffffff'>"+Department_Address+"<o:p></o:p>"+Phone_Number+"</span></p>\
         </td>\
+       </tr>\
+       <tr style='height:5.0pt'>\
+        <td style='width:460.0pt;padding:0cm 0cm 0cm 0cm;height:5.0pt'></td>\
        </tr>\
       </table>\
       </td>\
@@ -675,12 +665,12 @@ function Preview_Event_Invitation(){
     </table>\
     </td>\
    </tr>\
-   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.0pt'>\
-    <td width=600 style='width:460.0pt;padding:0cm 0cm 0cm 0cm;height:15.0pt'></td>\
+   <tr style='height:15.0pt'>\
+    <td style='width:460.0pt;padding:0cm 0cm 0cm 0cm;height:15.0pt'></td>\
    </tr>\
    </div>\
   </table>\
-  </div><br>";
+  </div><br></body></html>";
 
 }
 
@@ -910,7 +900,7 @@ function download(){
     a.download = Email_Subject+"_"+today+".eml";
 
     var emlCon="X-Unsent: 1 \n"+"Content-Type: text/html \nSubject: "+Email_Subject+" \n\n";
-    a.href = "data:text/html,"+emlCon+"<html><head></head><body>"+Preview_Area+"</body></html>"; // Grab the HTML
+    a.href = "data:text/html,"+emlCon+""+Preview_Area+""; // Grab the HTML
     a.click(); // Trigger a click on the element
 }
 
