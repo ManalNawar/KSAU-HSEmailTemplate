@@ -21,5 +21,7 @@
  	];
 
  	config.removeButtons = 'Source,Save,NewPage,Preview,Print,Templates,Cut,Copy,Scayt,Replace,Find,SelectAll,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,CreateDiv,Iframe,Anchor,PageBreak,Styles,Format,Maximize,ShowBlocks,About';
+  config.removePlugins = 'blockquote';
   config.extraPlugins = 'lineheight';
+  config.extraPlugins = 'image2';
  };

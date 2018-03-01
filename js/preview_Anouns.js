@@ -720,7 +720,7 @@ function Preview_Event_Invitation(){
 
 
 
-   EmailContent=CKEDITOR.instances.EmailContent.getData();//CKEDITOR.instances.EmailContent.document.getBody().getHtml();
+   EmailContent=CKEDITOR.instances.EmailContent.getData();//document.getBody().getHtml();//CKEDITOR.instances.EmailContent.getData();
 
    loadFooter();
 
